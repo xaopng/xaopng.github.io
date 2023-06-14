@@ -1,5 +1,6 @@
 ---
 title: ubuntu20安装node16
+abbrlink: 59359
 date: 2023-06-14 16:16:43
 tags:
 ---
