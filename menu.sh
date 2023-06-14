@@ -35,6 +35,9 @@ printf "\033[32m [17] \033[0m 切换npm源为阿里镜像\033[33m (当使用publ
 printf "\033[32m [18] \033[0m 切换npm源为官方源\033[33m (安装慢,但可以使用所有命令)\033[0m\n"
 printf "\033[32m [19] \033[0m 安装 Git\n"
 printf "\033[32m [20] \033[0m 安装 Node.js\n"
+printf "\033[31m =============以下功能为自定义功能==================\033[0m\n"
+printf "\033[32m [21] \033[0m 发说说\n"
+
 printf "请选择需要的功能，默认选择\033[32m [3] \033[0m开启本地预览\n"
 printf "选择：\n"
 read answer
@@ -145,7 +148,7 @@ if [ "${answer}" = "9" ]; then
 printf "\033[32mINFO \033[0m 正在提交最新修改到GitHub...\n"
 git add .
 git commit -m "Update posts content"
-git push origin $branch
+git push origin source
 printf "\033[32mINFO \033[0m 提交完毕，您的修改已上传至Github！\n"
 sleep 1s
 exec ${HexoPath}/menu.sh
@@ -299,9 +302,15 @@ printf "\033[32mINFO \033[0m 欢迎下次光临！\n"
 sleep 1s
 exit 0
 else
+if [ "${answer}" = "21" ]; then
+printf "您的说说内容："
+read essaycontent
+echo ${essaycontent} | awk -v date="$(date --iso-8601=seconds)" '{print "   ", "- content: ", $0, "\n", "    ", "date: ", date}' >> source/_data/essay.yml
+else
 printf "\033[31mERROR \033[0m 输入错误，请返回重新选择...\n"
 sleep 1s
 exec ${HexoPath}/menu.sh
+fi
 fi
 fi
 fi

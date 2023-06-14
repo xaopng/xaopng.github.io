@@ -1,0 +1,67 @@
+:root {
+    --xaopng-white: #fff;
+    --xaopng-white-op: rgba(255, 255, 255, 0.2);
+    --xaopng-black: #000;
+    --xaopng-black-op: rgba(0, 0, 0, 0.2);
+    --xaopng-none: #00000000;
+    --xaopng-gray: #999999;
+    --xaopng-gray-op: #9999992b;
+    --xaopng-vip: #e5a80d;
+    --xaopng-main: var(--xaopng-theme);
+    --xaopng-main-op: var(--xaopng-theme-op);
+    --xaopng-main-op-deep: var(--xaopng-theme-op-deep);
+    --xaopng-main-none: var(--xaopng-theme-none);
+    --xaopng-shadow-theme: 0 8px 12px -3px var(--xaopng-theme-op);
+    --xaopng-shadow-blackdeep: 0 2px 16px -3px rgba(0, 0, 0, .15);
+    --xaopng-shadow-main: 0 8px 12px -3px var(--xaopng-main-op);
+    --xaopng-shadow-blue: 0 8px 12px -3px rgba(40, 109, 234, .20);
+    --xaopng-shadow-white: 0 8px 12px -3px rgba(255, 255, 255, .20);
+    --xaopng-shadow-black: 0 0 12px 4px rgba(0, 0, 0, .05);
+    --xaopng-shadow-yellow: 0px 38px 77px -26px rgba(255, 201, 62, .12);
+    --xaopng-shadow-red: 0 8px 12px -3px #ee7d7936;
+    --xaopng-shadow-green: 0 8px 12px -3px #87ee7936;
+    --xaopng-logo-color: linear-gradient(215deg, #4584ff 0%, #cf0db9 100%);
+    --xaopng-snackbar-time: 5s;
+}
+[data-theme=light] {
+    --xaopng-theme: #425AEF;
+    --xaopng-theme-op: #4259ef23;
+    --xaopng-theme-op-deep: #4259efdd;
+    --xaopng-theme-none: #4259ef01;
+    --xaopng-blue: #425AEF;
+    --xaopng-red: #f04a63;
+    --xaopng-pink: #FF7C7C;
+    --xaopng-green: #57bd6a;
+    --xaopng-yellow: #c28b00;
+    --xaopng-yellow-op: #d99c001a;
+    --xaopng-orange: #e38100;
+    --xaopng-fontcolor: #363636;
+    --xaopng-background: #f7f9fe;
+    --xaopng-reverse: #000;
+    --xaopng-maskbg: rgba(255, 255, 255, 0.6);
+    --xaopng-maskbgdeep: rgba(255, 255, 255, 0.85);
+    --xaopng-hovertext: var(--xaopng-main);
+    --xaopng-ahoverbg: #F7F7FA;
+    --xaopng-lighttext: var(--xaopng-main);
+    --xaopng-secondtext: rgba(60, 60, 67, 0.8);
+    --xaopng-scrollbar: rgba(60, 60, 67, 0.4);
+    --xaopng-card-btn-bg: #edf0f7;
+    --xaopng-post-blockquote-bg: #fafcff;
+    --xaopng-post-tabs-bg: #f2f5f8;
+    --xaopng-secondbg: #f1f3f8;
+    --xaopng-shadow-nav: 0 5px 12px -5px rgba(102, 68, 68, 0.05);
+    --xaopng-card-bg: #fff;
+    --xaopng-card-bg-op: var(--xaopng-black-op);
+    --xaopng-card-bg-none: rgba(255, 255, 255, 0);
+    --xaopng-shadow-lightblack: 0 5px 12px -5px rgba(102, 68, 68, 0.00);
+    --xaopng-shadow-light2black: 0 5px 12px -5px rgba(102, 68, 68, 0.00);
+    --xaopng-card-border: #e3e8f7;
+    --xaopng-shadow-border: 0 8px 16px -4px #2c2d300c;
+    --style-border: 1px solid var(--xaopng-card-border);
+    --style-border-always: 1px solid var(--xaopng-card-border);
+    --style-border-hover: 1px solid var(--xaopng-main);
+    --style-border-hover-always: 1px solid var(--xaopng-main);
+    --style-border-dashed: 1px dashed var(--xaopng-theme-op);
+    --style-border-forever: 2px solid var(--xaopng-main);
+
+}
