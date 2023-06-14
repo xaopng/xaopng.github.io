@@ -147,7 +147,9 @@ else
 if [ "${answer}" = "9" ]; then
 printf "\033[32mINFO \033[0m 正在提交最新修改到GitHub...\n"
 git add .
-git commit -m "Update posts content"
+printf "请输入commit message: "
+read commitmessage
+git commit -m "$commitmessage"
 git push origin source
 printf "\033[32mINFO \033[0m 提交完毕，您的修改已上传至Github！\n"
 sleep 1s
