@@ -2,6 +2,10 @@
 title: 'Win10:Hexo+github搭建个人博客'
 abbrlink: 6335
 date: 2023-06-14 22:06:09
+copyright_author: Akilar
+copyright_author_href: https://akilar.top/
+copyright_url: https://akilar.top/posts/6ef63e2d/
+copyright_info: 本文转载自 https://akilar.top/posts/6ef63e2d/
 tags:
 ---
 

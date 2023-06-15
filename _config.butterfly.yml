@@ -907,7 +907,6 @@ inject:
     - <link rel="stylesheet" href="/css/color.css">
     - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
     # - <link rel="stylesheet" href="https://blog.bywind.xyz/css/bywind.css">
-    - <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/js-heo@1.0.11/bb/showbb_in_index.css">
     - <script src="https://cdn.staticaly.com/gh/haonan15/CDN@main/source/waterfall.min.js"></script> # 瀑布流
   bottom:
     # - <script src="xxxx"></script>
