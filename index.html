@@ -51,7 +51,7 @@
   isHome: true,
   isHighlightShrink: true,
   isToc: false,
-  postUpdate: '2024-02-28 17:47:23'
+  postUpdate: '2024-02-28 17:49:15'
 }</script><script>(win=>{
       win.saveToLocal = {
         set: (key, value, ttl) => {
@@ -238,34 +238,25 @@ footer-matter 中的 id 值，那么文章链接永远不会变
 修改文章链接格式
 12- permalink: :year/:month/:day/:title/+ permalink: posts/:abbrlink.html
 在_config.yml文件末尾添加下面配置
-1234567891011121314## abbrlink  ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/posts/9ff9fc00.html" title="Win10:Hexo+github搭建个人博客">Win10:Hexo+github搭建个人博客</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-02-27T12:39:48.000Z" title="Created 2024-02-27 20:39:48">2024-02-27</time></span></div><div class="content">准备工作
+1234567891011121314## abbrlink  ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/posts/9ff9fc00.html" title="Win10:Hexo+github搭建个人博客">Win10:Hexo+github搭建个人博客</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2024-02-27T12:39:48.000Z" title="Created 2024-02-27 20:39:48">2024-02-27</time></span></div><div class="content">
+文章中博客根目录均使用[BlogRoot]代替
 
-Node.js
+Hexo 文章生成永久链接
 
+Hexo
+文章链接默认的生成规则是：:year/:month/:day/:title，是按照年、月、日、标题来生成的。
+通过这种方式生成的链接非常长，如果我们的 Markdown 使用中文标题，URL
+一转码，将是一场灾难
+更难受的是如果我们修改了文章的日期或者标题，那么将导致链接改变，别人或者你分享出去的文章就会
+404
 
-（建议选择左边的稳定版本，右边的最新版本可能会出现莫名bug）
-Node.js是基于Chrome的V8
-JavaScript引擎构建的运行在服务端的JavaScript开发平台,知道这些就够了。
-反正作为一个包管理器，安装以后再也不用去打扰它的具体配置。默默运行就是了。
+所以就有了这种插件，不论你如何修改文章的日期、名称，只要不改变
+footer-matter 中的 id 值，那么文章链接永远不会变
 
-
-git
-
-
-可以选择安装版，也可以选择绿色版。
-绿色版需要加上Git_HOME，%Git_HOME%\bin之类的环境变量，建议下载安装版一路默认安装，安装包会自动添加相应的环境变量。
-
-
-Typora
-
-
-typora是一个专业的markdown编辑器，比之atom的最大优势就是同步渲染速度，缺点是对于代码高亮的支持并不是很方便，自带源代码模式
-，拿来看看代码也不错
-
-安装Hexo
-
-首先给出官方网址:Hexo官网
-具体搭建可以直接看下面的步骤
-
-
-首先需要建立博客文件夹，建议建在非系统盘，例如~D:/Hexo/，那么这个目录就是我们博客的根目录了。因为每个人的命名习惯不同，本帖之后会以[Blogroot]指代博客根目录。 ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="http://img.xaopng.top/i/2023/11/05/6547aa77dc456.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Plaing</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xaopng"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/2bcb1cd7.html" title="Hexo文章写作格式">Hexo文章写作格式</a><time datetime="2024-02-28T03:12:07.000Z" title="Created 2024-02-28 11:12:07">2024-02-28</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/e18ede91.html" title="Hexo配置">Hexo配置</a><time datetime="2024-02-27T12:39:48.000Z" title="Created 2024-02-27 20:39:48">2024-02-27</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/9ff9fc00.html" title="Win10:Hexo+github搭建个人博客">Win10:Hexo+github搭建个人博客</a><time datetime="2024-02-27T12:39:48.000Z" title="Created 2024-02-27 20:39:48">2024-02-27</time></div></div></div></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>Tags</span></div><div class="card-tag-cloud"><a href="/tags/hexo/" style="font-size: 1.1em; color: #999">hexo</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/02/"><span class="card-archive-list-date">February 2024</span><span class="card-archive-list-count">3</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">3</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Update :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-02-28T09:47:23.078Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By Plaing</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
+安装插件hexo-abbrlink
+1npm install hexo-abbrlink --save
+修改配置文件_config.yml
+修改文章链接格式
+12- permalink: :year/:month/:day/:title/+ permalink: posts/:abbrlink.html
+在_config.yml文件末尾添加下面配置
+1234567891011121314## abbrlink  ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="http://img.xaopng.top/i/2023/11/05/6547aa77dc456.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Plaing</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xaopng"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/2bcb1cd7.html" title="Hexo文章写作格式">Hexo文章写作格式</a><time datetime="2024-02-28T03:12:07.000Z" title="Created 2024-02-28 11:12:07">2024-02-28</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/e18ede91.html" title="Hexo配置">Hexo配置</a><time datetime="2024-02-27T12:39:48.000Z" title="Created 2024-02-27 20:39:48">2024-02-27</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/9ff9fc00.html" title="Win10:Hexo+github搭建个人博客">Win10:Hexo+github搭建个人博客</a><time datetime="2024-02-27T12:39:48.000Z" title="Created 2024-02-27 20:39:48">2024-02-27</time></div></div></div></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>Tags</span></div><div class="card-tag-cloud"><a href="/tags/hexo/" style="font-size: 1.1em; color: #999">hexo</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2024/02/"><span class="card-archive-list-date">February 2024</span><span class="card-archive-list-count">3</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">3</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Update :</div><div class="item-count" id="last-push-date" data-lastPushDate="2024-02-28T09:49:15.771Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By Plaing</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
