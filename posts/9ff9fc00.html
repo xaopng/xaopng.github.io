@@ -1,280 +1,159 @@
-
-
-<!DOCTYPE html>
-<html lang="en" data-default-color-scheme=auto>
-
-
-
-<head>
-  <meta charset="UTF-8">
-  <link rel="apple-touch-icon" sizes="76x76" href="/img/fluid.png">
-  <link rel="icon" href="/img/plaing-logo.png">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  
-  <meta name="theme-color" content="#2f4154">
-  <meta name="author" content="Plaing">
-  <meta name="keywords" content="">
-  
-    <meta name="description" content="准备工作  Node.js   （建议选择左边的稳定版本，右边的最新版本可能会出现莫名bug） Node.js是基于Chrome的V8 JavaScript引擎构建的运行在服务端的JavaScript开发平台,知道这些就够了。 反正作为一个包管理器，安装以后再也不用去打扰它的具体配置。默默运行就是了。   git   可以选择安装版，也可以选择绿色版。 绿色版需要加上">
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Win10:Hexo+github搭建个人博客 | Plaing</title><meta name="author" content="Plaing"><meta name="copyright" content="Plaing"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="准备工作  Node.js   （建议选择左边的稳定版本，右边的最新版本可能会出现莫名bug） Node.js是基于Chrome的V8 JavaScript引擎构建的运行在服务端的JavaScript开发平台,知道这些就够了。 反正作为一个包管理器，安装以后再也不用去打扰它的具体配置。默默运行就是了。   git   可以选择安装版，也可以选择绿色版。 绿色版需要加上">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Win10:Hexo+github搭建个人博客">
 <meta property="og:url" content="http://example.com/posts/9ff9fc00.html">
 <meta property="og:site_name" content="Plaing">
 <meta property="og:description" content="准备工作  Node.js   （建议选择左边的稳定版本，右边的最新版本可能会出现莫名bug） Node.js是基于Chrome的V8 JavaScript引擎构建的运行在服务端的JavaScript开发平台,知道这些就够了。 反正作为一个包管理器，安装以后再也不用去打扰它的具体配置。默默运行就是了。   git   可以选择安装版，也可以选择绿色版。 绿色版需要加上">
 <meta property="og:locale" content="en_US">
-<meta property="og:image" content="http://img.xaopng.top/i/2024/02/27/65dd8359b0d22.png">
+<meta property="og:image" content="http://img.xaopng.top/i/2023/11/05/6547aa77dc456.jpg">
 <meta property="article:published_time" content="2024-02-27T12:39:48.000Z">
-<meta property="article:modified_time" content="2024-02-27T16:25:46.679Z">
+<meta property="article:modified_time" content="2024-02-28T09:31:47.128Z">
 <meta property="article:author" content="Plaing">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://img.xaopng.top/i/2024/02/27/65dd8359b0d22.png">
-  
-  
-  
-  <title>Win10:Hexo+github搭建个人博客 - Plaing</title>
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
-
-
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
-
-  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
-
-
-
-<!-- 主题依赖的图标库，不要自行修改 -->
-<!-- Do not modify the link that theme dependent icons -->
-
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_hj8rtnfg7um.css">
-
-
-
-<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_lbnruvf0jn.css">
-
-
-<link  rel="stylesheet" href="/css/main.css" />
-
-
-  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
-  
-    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
-  
-
-
-
-
-  <script id="fluid-configs">
-    var Fluid = window.Fluid || {};
-    Fluid.ctx = Object.assign({}, Fluid.ctx)
-    var CONFIG = {"hostname":"example.com","root":"/","version":"1.9.7","typing":{"enable":true,"typeSpeed":70,"cursorChar":"_","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":""},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":false,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":null,"app_key":null,"server_url":null,"path":"window.location.pathname","ignore_local":false}},"search_path":"/local-search.xml","include_content_in_search":true};
-
-    if (CONFIG.web_analytics.follow_dnt) {
-      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
-      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
-    }
-  </script>
-  <script  src="/js/utils.js" ></script>
-  <script  src="/js/color-schema.js" ></script>
-  
-
-
-  
-<meta name="generator" content="Hexo 7.1.1"></head>
-
-
-<body>
-  
-
-  <header>
-    
-
-<div class="header-inner" style="height: 70vh;">
-  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
-  <div class="container">
-    <a class="navbar-brand" href="/">
-      <strong>Plaing</strong>
-    </a>
-
-    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <div class="animated-icon"><span></span><span></span><span></span></div>
-    </button>
-
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto text-center">
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/" target="_self">
-                <i class="iconfont icon-home-fill"></i>
-                <span>Home</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/archives/" target="_self">
-                <i class="iconfont icon-archive-fill"></i>
-                <span>Archives</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/categories/" target="_self">
-                <i class="iconfont icon-category-fill"></i>
-                <span>Categories</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/tags/" target="_self">
-                <i class="iconfont icon-tags-fill"></i>
-                <span>Tags</span>
-              </a>
-            </li>
-          
-        
-          
-          
-          
-          
-            <li class="nav-item">
-              <a class="nav-link" href="/about/" target="_self">
-                <i class="iconfont icon-user-fill"></i>
-                <span>About</span>
-              </a>
-            </li>
-          
-        
-        
-          <li class="nav-item" id="search-btn">
-            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
-              <i class="iconfont icon-search"></i>
-            </a>
-          </li>
-          
-        
-        
-          <li class="nav-item" id="color-toggle-btn">
-            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
-              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
-            </a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-</nav>
-
-  
-
-<div id="banner" class="banner" parallax=true
-     style="background: url('https://bing.img.run/rand.php') no-repeat center center; background-size: cover;">
-  <div class="full-bg-img">
-    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
-      <div class="banner-text text-center fade-in-up">
-        <div class="h2">
-          
-            <span id="subtitle" data-typed-text="Win10:Hexo+github搭建个人博客"></span>
-          
-        </div>
-
-        
-          
-  <div class="mt-3">
-    
-    
-      <span class="post-meta">
-        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2024-02-27 20:39" pubdate>
-          February 27, 2024 pm
-        </time>
-      </span>
-    
-  </div>
-
-  <div class="mt-1">
-    
-      <span class="post-meta mr-2">
-        <i class="iconfont icon-chart"></i>
-        
-          6.6k words
-        
-      </span>
-    
-
-    
-      <span class="post-meta mr-2">
-        <i class="iconfont icon-clock-fill"></i>
-        
-        
-        
-          55 mins
-        
-      </span>
-    
-
-    
-    
-  </div>
-
-
-        
-      </div>
-
+<meta property="article:tag" content="hexo">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://img.xaopng.top/i/2023/11/05/6547aa77dc456.jpg"><link rel="shortcut icon" href="/img/plaing-logo.png"><link rel="canonical" href="http://example.com/posts/9ff9fc00.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.13.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":200},
+  copy: {
+    success: 'Copy Successful',
+    error: 'Copy Error',
+    noSupport: 'Browser Not Supported'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just now',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.1/dist/infinitegrid.min.js',
+    buttonText: 'Load More'
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Win10:Hexo+github搭建个人博客',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: true,
+  isToc: true,
+  postUpdate: '2024-02-28 17:31:47'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
       
-    </div>
-  </div>
-</div>
-
-</div>
-
-  </header>
-
-  <main>
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
     
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
       
-
-<div class="container-fluid nopadding-x">
-  <div class="row nomargin-x">
-    <div class="side-col d-none d-lg-block col-lg-2">
-      
-
-    </div>
-
-    <div class="col-lg-8 nopadding-x-md">
-      <div class="container nopadding-x-md" id="board-ctn">
-        <div id="board">
-          <article class="post-content mx-auto">
-            <h1 id="seo-header">Win10:Hexo+github搭建个人博客</h1>
-            
-            
-              <div class="markdown-body">
-                
-                <h2 id="准备工作">准备工作</h2>
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.1.1"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="http://img.xaopng.top/i/2023/11/05/6547aa77dc456.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Plaing"><img class="site-icon" src="/img/plaing-logo.png"/><span class="site-name">Plaing</span></a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Win10:Hexo+github搭建个人博客</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2024-02-27T12:39:48.000Z" title="Created 2024-02-27 20:39:48">2024-02-27</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2024-02-28T09:31:47.128Z" title="Updated 2024-02-28 17:31:47">2024-02-28</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Win10:Hexo+github搭建个人博客"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post Views:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="准备工作">准备工作</h2>
 <ul>
 <li><a target="_blank" rel="noopener" href="https://nodejs.org/en/">Node.js</a></li>
 </ul>
@@ -307,106 +186,41 @@ JavaScript引擎构建的运行在服务端的JavaScript开发平台,知道这�
 <li><p>首先需要建立博客文件夹，建议建在非系统盘，例如<code>~D:/Hexo/</code>，那么这个目录就是我们博客的根目录了。因为每个人的命名习惯不同，本帖之后会以<code>[Blogroot]</code>指代博客根目录。</p></li>
 <li><p>使用<code>npm</code>安装<code>Hexo</code>,在<code>[Blogroot]</code>路径下右键-&gt;Git
 Bash Here,输入</p>
-<div class="code-wrapper"><pre><code class="hljs bash">npm config <span class="hljs-built_in">set</span> registry https://registry.npmmirror.com
-<span class="hljs-comment">#将npm源替换为阿里的镜像。之后的安装就会迅速很多了。</span>
-npm install hexo-cli -g
-<span class="hljs-comment"># hexo-cli 是 hexo的指令集。</span>
-hexo init
-<span class="hljs-comment"># 有了指令集以后，使用它的初始化指令来初始化安装Hexo博客。</span></code></pre></div></li>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">npm config <span class="built_in">set</span> registry https://registry.npmmirror.com</span><br><span class="line"><span class="comment">#将npm源替换为阿里的镜像。之后的安装就会迅速很多了。</span></span><br><span class="line">npm install hexo-cli -g</span><br><span class="line"><span class="comment"># hexo-cli 是 hexo的指令集。</span></span><br><span class="line">hexo init</span><br><span class="line"><span class="comment"># 有了指令集以后，使用它的初始化指令来初始化安装Hexo博客。</span></span><br></pre></td></tr></table></figure></li>
 <li><p>安装插件，依然是在<code>[Blogroot]</code>路径下右键-&gt;Git Bash
 Here，使用<code>npm</code>指令挑选需要的插件安装。(请仔细阅读注释，确定你是否需要安装这个插件)。</p>
-<div class="code-wrapper"><pre><code class="hljs bash">npm install hexo-generator-index --save
-<span class="hljs-comment"># 主页插件，最新版Hexo默认安装，可跳过</span>
-npm install hexo-generator-archive --save
-<span class="hljs-comment"># 归档插件，最新版Hexo默认安装，可跳过</span>
-npm install hexo-generator-category --save
-<span class="hljs-comment"># 分类插件，最新版Hexo默认安装，可跳过</span>
-npm install hexo-generator-tag --save
-<span class="hljs-comment"># 标签插件，最新版Hexo默认安装，可跳过</span>
-npm install hexo-server --save
-<span class="hljs-comment"># 服务插件，最新版Hexo默认安装，可跳过</span>
-npm install hexo-renderer-marked --save
-<span class="hljs-comment"># markdown渲染支持插件，最新版Hexo默认安装，可跳过</span>
-npm install hexo-renderer-stylus --save
-<span class="hljs-comment"># nib css支持插件，如无需求，可跳过</span>
-npm install hexo-generator-feed --save
-<span class="hljs-comment"># RSS订阅支持插件，如无需求，可跳过</span>
-npm install hexo-generator-sitemap --save
-<span class="hljs-comment"># sitemap生成插件，帮助搜索引擎抓取，如无需求，可跳过</span>
-npm install hexo-admin --save
-<span class="hljs-comment"># 网页端hexo文档管理插件，如无需求，可跳过</span>
-npm install hexo-deployer-git --save
-<span class="hljs-comment"># git部署插件，必须安装</span></code></pre></div></li>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-generator-index --save</span><br><span class="line"><span class="comment"># 主页插件，最新版Hexo默认安装，可跳过</span></span><br><span class="line">npm install hexo-generator-archive --save</span><br><span class="line"><span class="comment"># 归档插件，最新版Hexo默认安装，可跳过</span></span><br><span class="line">npm install hexo-generator-category --save</span><br><span class="line"><span class="comment"># 分类插件，最新版Hexo默认安装，可跳过</span></span><br><span class="line">npm install hexo-generator-tag --save</span><br><span class="line"><span class="comment"># 标签插件，最新版Hexo默认安装，可跳过</span></span><br><span class="line">npm install hexo-server --save</span><br><span class="line"><span class="comment"># 服务插件，最新版Hexo默认安装，可跳过</span></span><br><span class="line">npm install hexo-renderer-marked --save</span><br><span class="line"><span class="comment"># markdown渲染支持插件，最新版Hexo默认安装，可跳过</span></span><br><span class="line">npm install hexo-renderer-stylus --save</span><br><span class="line"><span class="comment"># nib css支持插件，如无需求，可跳过</span></span><br><span class="line">npm install hexo-generator-feed --save</span><br><span class="line"><span class="comment"># RSS订阅支持插件，如无需求，可跳过</span></span><br><span class="line">npm install hexo-generator-sitemap --save</span><br><span class="line"><span class="comment"># sitemap生成插件，帮助搜索引擎抓取，如无需求，可跳过</span></span><br><span class="line">npm install hexo-admin --save</span><br><span class="line"><span class="comment"># 网页端hexo文档管理插件，如无需求，可跳过</span></span><br><span class="line">npm install hexo-deployer-git --save</span><br><span class="line"><span class="comment"># git部署插件，必须安装</span></span><br></pre></td></tr></table></figure></li>
 <li><p>常用命令</p>
-<div class="code-wrapper"><pre><code class="hljs bash">hexo clean
-<span class="hljs-comment">#清空缓存</span>
-hexo generate
-hexo g <span class="hljs-comment">#简写</span>
-<span class="hljs-comment">#重新编译</span>
-hexo server
-hexo s <span class="hljs-comment">#简写</span>
-<span class="hljs-comment">#打开本地访问</span>
-hexo new &lt;layout&gt; <span class="hljs-string">&quot;文章title&quot;</span>
-<span class="hljs-comment">#新建文章</span>
-hexo deploy
-hexo d <span class="hljs-comment">#简写</span>
-<span class="hljs-comment">#部署到云端</span></code></pre></div></li>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line"><span class="comment">#清空缓存</span></span><br><span class="line">hexo generate</span><br><span class="line">hexo g <span class="comment">#简写</span></span><br><span class="line"><span class="comment">#重新编译</span></span><br><span class="line">hexo server</span><br><span class="line">hexo s <span class="comment">#简写</span></span><br><span class="line"><span class="comment">#打开本地访问</span></span><br><span class="line">hexo new &lt;layout&gt; <span class="string">&quot;文章title&quot;</span></span><br><span class="line"><span class="comment">#新建文章</span></span><br><span class="line">hexo deploy</span><br><span class="line">hexo d <span class="comment">#简写</span></span><br><span class="line"><span class="comment">#部署到云端</span></span><br></pre></td></tr></table></figure></li>
 <li><p>本地预览：在<code>[Blogroot]</code>路径下右键-&gt;Git Bash
 Here，输入</p>
-<div class="code-wrapper"><pre><code class="hljs bash">hexo server</code></pre></div>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
 <p><img
-src="http://img.xaopng.top/i/2024/02/27/65dd5a0b6b998.png" srcset="/img/loading.gif" lazyload /></p>
+src="http://img.xaopng.top/i/2024/02/27/65dd5a0b6b998.png" /></p>
 <p>然后在浏览器中打开<code>localhost:4000</code> ,就能看到</p>
 <p><img
-src="http://img.xaopng.top/i/2024/02/27/65dd5a2ae2ce7.png" srcset="/img/loading.gif" lazyload /></p>
+src="http://img.xaopng.top/i/2024/02/27/65dd5a2ae2ce7.png" /></p>
 <p>如果你安装了<code>hexo-admin</code>插件，就可以通过访问<code>localhost:4000/admin</code>来管理你的文章了。并且在可视化界面中操作文章内容。恭喜你，博客的本地部署到这里算是告一段落了。</p></li>
 <li><p>添加分类页面和标签页面</p>
 <ul>
 <li><p>添加分类页面</p>
 <p>在<code>[Blogroot]</code>路径下右键-&gt;Git Bash Here，输入：</p>
-<div class="code-wrapper"><pre><code class="hljs bash">hexo new page categories
-<span class="hljs-comment"># 创建“分类”页面</span></code></pre></div>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo new page categories</span><br><span class="line"><span class="comment"># 创建“分类”页面</span></span><br></pre></td></tr></table></figure>
 <p>打开<code>[Blogroot]/sources/categories/index.md</code>
 在它的头部加上<code>type</code>属性。</p>
-<div class="code-wrapper"><pre><code class="hljs diff">  ---
-  title: categories
-  date: 2017-05-27 13:47:40
-<span class="hljs-addition">+ type: &quot;categories&quot;</span>
-  ---</code></pre></div>
+<figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">  ---</span><br><span class="line">  title: categories</span><br><span class="line">  date: 2017-05-27 13:47:40</span><br><span class="line"><span class="addition">+ type: &quot;categories&quot;</span></span><br><span class="line">  ---</span><br></pre></td></tr></table></figure>
 <p>给文章添加分类，例如我要给<code>Hello-world</code>这篇文章添加分类，打开<code>[Blogroot]/sources/_posts/Hello-woeld.md</code>,修改他的头部内容为：</p>
-<div class="code-wrapper"><pre><code class="hljs diff">  ---
-  title: Hello-World
-  date: 2019-04-07 00:38:36
-<span class="hljs-addition">+ categories: 学习笔记</span>
-  tags: [node.js, hexo]
-  ---</code></pre></div></li>
+<figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">  ---</span><br><span class="line">  title: Hello-World</span><br><span class="line">  date: 2019-04-07 00:38:36</span><br><span class="line"><span class="addition">+ categories: 学习笔记</span></span><br><span class="line">  tags: [node.js, hexo]</span><br><span class="line">  ---</span><br></pre></td></tr></table></figure></li>
 <li><p>添加标签页面</p>
 <p>在<code>[Blogroot]</code>路径下右键-&gt;Git Bash Here，输入：</p>
-<div class="code-wrapper"><pre><code class="hljs bash">hexo new page tags
-<span class="hljs-comment"># 创建“标签”页面</span></code></pre></div>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo new page tags</span><br><span class="line"><span class="comment"># 创建“标签”页面</span></span><br></pre></td></tr></table></figure>
 <p>打开<code>[Blogroot]/sources/tags/index.md</code>
 在它的头部加上<code>type</code>属性</p>
-<div class="code-wrapper"><pre><code class="hljs diff">  ---
-  title: tags
-  date: 2017-05-27 13:47:40
-<span class="hljs-addition">+ type: &quot;tags&quot;</span>
-  ---</code></pre></div>
+<figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">  ---</span><br><span class="line">  title: tags</span><br><span class="line">  date: 2017-05-27 13:47:40</span><br><span class="line"><span class="addition">+ type: &quot;tags&quot;</span></span><br><span class="line">  ---</span><br></pre></td></tr></table></figure>
 <p>给文章添加标签，例如我要给<code>Hello-world</code>这篇文章添加标签，打开<code>[Blogroot]/sources/_posts/Hello-world.md</code>,修改他的头部内容为：</p>
-<div class="code-wrapper"><pre><code class="hljs diff">  ---
-  title: Hello-World
-  date: 2019-04-07 00:38:36
-  categories: 学习笔记
-<span class="hljs-addition">+ tags: [node.js, hexo]  # 逗号是英文逗号</span>
-  ---</code></pre></div>
+<figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">  ---</span><br><span class="line">  title: Hello-World</span><br><span class="line">  date: 2019-04-07 00:38:36</span><br><span class="line">  categories: 学习笔记</span><br><span class="line"><span class="addition">+ tags: [node.js, hexo]  # 逗号是英文逗号</span></span><br><span class="line">  ---</span><br></pre></td></tr></table></figure>
 <p>第二种写法是用-短划线列出来</p>
-<div class="code-wrapper"><pre><code class="hljs diff">  ---
-  title: Hello-World
-  date: 2019-04-07 00:38:36
-  categories: 学习笔记
-<span class="hljs-addition">+ tags:</span>
-<span class="hljs-addition">+   - node.js # 注意短线后有空格</span>
-<span class="hljs-addition">+   - 📁Hexo</span>
-  ---</code></pre></div></li>
+<figure class="highlight diff"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">  ---</span><br><span class="line">  title: Hello-World</span><br><span class="line">  date: 2019-04-07 00:38:36</span><br><span class="line">  categories: 学习笔记</span><br><span class="line"><span class="addition">+ tags:</span></span><br><span class="line"><span class="addition">+   - node.js # 注意短线后有空格</span></span><br><span class="line"><span class="addition">+   - 📁Hexo</span></span><br><span class="line">  ---</span><br></pre></td></tr></table></figure></li>
 </ul></li>
 </ol>
 <h2 id="部署到github">部署到Github</h2>
@@ -438,15 +252,11 @@ GitHub 账号下创建一个新的仓库，命名为
 <li>此处为全局配置，所以可以在任意位置打开git
 bash,设置用户名称和邮件地址</li>
 </ul>
-<div class="code-wrapper"><pre><code class="hljs bash">git config --global user.name <span class="hljs-string">&quot;akilarlxh&quot;</span>
-git config --global user.email <span class="hljs-string">&quot;akilarlxh@gmail.com&quot;</span></code></pre></div>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name <span class="string">&quot;akilarlxh&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;akilarlxh@gmail.com&quot;</span></span><br></pre></td></tr></table></figure>
 <ul>
 <li>设置完成后为了能够在本地使用<code>git</code>管理<code>github</code>上的项目，需要绑定<code>SSHkey</code>。</li>
 </ul>
-<div class="code-wrapper"><pre><code class="hljs bash">ssh-keygen -t rsa -C akilarlxh@gmail.com
-<span class="hljs-comment"># -C后面加你在github的用户名邮箱，这样公钥才会被github认可</span>
-less ~/.ssh/id_rsa.pub
-<span class="hljs-comment"># 查看公钥内容稍后加入Github账户的sshkey中,</span></code></pre></div>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C akilarlxh@gmail.com</span><br><span class="line"><span class="comment"># -C后面加你在github的用户名邮箱，这样公钥才会被github认可</span></span><br><span class="line">less ~/.ssh/id_rsa.pub</span><br><span class="line"><span class="comment"># 查看公钥内容稍后加入Github账户的sshkey中,</span></span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>这一步骤推荐在<code>git bash</code>中运行指令。若使用<code>powershell</code>或<code>cmd</code>，<code>less</code>指令缺少必要的C语言环境，需要访问<code>C:\Users\Username\.ssh\id_rsa.pub</code>复制。</p>
 </blockquote>
@@ -456,48 +266,32 @@ less ~/.ssh/id_rsa.pub
 <p>单击头像-&gt;settings,在设置页面找到SSH and GPG keys，单击New SSH
 key新建<code>SSH KEY</code>。</p>
 <p><img
-src="http://img.xaopng.top/i/2024/02/27/65dd77bb6d2a8.png" srcset="/img/loading.gif" lazyload /></p>
+src="http://img.xaopng.top/i/2024/02/27/65dd77bb6d2a8.png" /></p>
 <ul>
 <li>保存后，在git bash测试sshkey是否添加成功，输入</li>
 </ul>
-<div class="code-wrapper"><pre><code class="hljs bash">ssh -T git@github.com
-<span class="hljs-comment"># Attempts to ssh to GitHub</span></code></pre></div>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br><span class="line"><span class="comment"># Attempts to ssh to GitHub</span></span><br></pre></td></tr></table></figure>
 <ul>
 <li>正常输出是</li>
 </ul>
-<div class="code-wrapper"><pre><code class="hljs bash">The authenticity of host <span class="hljs-string">&#x27;github.com (207.97.227.239)&#x27;</span> can<span class="hljs-string">&#x27;t be established.</span>
-<span class="hljs-string">RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.</span>
-<span class="hljs-string">Are you sure you want to continue connecting (yes/no)?</span>
-<span class="hljs-string"># 此处请输入yes</span>
-<span class="hljs-string">Hi username! You&#x27;</span>ve successfully authenticated, but GitHub does not
-provide shell access.</code></pre></div>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">The authenticity of host <span class="string">&#x27;github.com (207.97.227.239)&#x27;</span> can<span class="string">&#x27;t be established.</span></span><br><span class="line"><span class="string">RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.</span></span><br><span class="line"><span class="string">Are you sure you want to continue connecting (yes/no)?</span></span><br><span class="line"><span class="string"># 此处请输入yes</span></span><br><span class="line"><span class="string">Hi username! You&#x27;</span>ve successfully authenticated, but GitHub does not</span><br><span class="line">provide shell access.</span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>配置过程中可能遇到的bug</p>
 <p>输出报错为</p>
-<div class="code-wrapper"><pre><code class="hljs bash">ssh: connect to host gitee.com port 22: Connection timed out</code></pre></div>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh: connect to host gitee.com port 22: Connection timed out</span><br></pre></td></tr></table></figure>
 <p>这是由于在当前网络环境中，端口22被占用了，我们改用其他端口再试试</p>
-<div class="code-wrapper"><pre><code class="hljs bash">ssh -T -p 443 git@ssh.github.com
-<span class="hljs-comment"># -p 443表示使用443端口，要是443也被占用，也可以尝试其他端口</span></code></pre></div>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh -T -p 443 git@ssh.github.com</span><br><span class="line"><span class="comment"># -p 443表示使用443端口，要是443也被占用，也可以尝试其他端口</span></span><br></pre></td></tr></table></figure>
 </blockquote></li>
 <li><p>配置hexo部署插件内容：</p>
 <ul>
 <li>确保你安装了<code>hexo-deployer-git</code>,如果没有，在<code>[Blogroot]</code>路径下右键-&gt;Git
 Bash Here，输入：</li>
 </ul>
-<div class="code-wrapper"><pre><code class="hljs bash">npm install hexo-deployer-git --save</code></pre></div>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 <ul>
 <li>打开<code>[Blogroot]/_config.yml</code>,修改底部的<code>deploy</code>配置项。如果没有找到<code>deploy</code>配置项,则自己添加：</li>
 </ul>
-<div class="code-wrapper"><pre><code class="hljs yaml"><span class="hljs-comment"># 站点部署到github要配置Deployment</span>
-<span class="hljs-comment">## Docs: https://zespia.tw/hexo/docs/deploy.html</span>
-<span class="hljs-attr">deploy:</span>
-  <span class="hljs-attr">type:</span> <span class="hljs-string">git</span>
-  <span class="hljs-attr">repo:</span>
-    <span class="hljs-attr">github:</span>
-      <span class="hljs-attr">url:</span> <span class="hljs-string">git@github.com:username/username.github.io.git</span>  <span class="hljs-comment"># 记得把username替换为自己的用户名</span>
-      <span class="hljs-attr">branch:</span> <span class="hljs-string">master</span> <span class="hljs-comment">#2020年10月后github新建仓库默认分支改为main，注意修改</span>
-    <span class="hljs-comment"># 也可以用另一种写法,二选一即可</span>
-    <span class="hljs-attr">github:</span> <span class="hljs-string">git@github.com:username/username.github.io.git,master</span></code></pre></div>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 站点部署到github要配置Deployment</span></span><br><span class="line"><span class="comment">## Docs: https://zespia.tw/hexo/docs/deploy.html</span></span><br><span class="line"><span class="attr">deploy:</span></span><br><span class="line">  <span class="attr">type:</span> <span class="string">git</span></span><br><span class="line">  <span class="attr">repo:</span></span><br><span class="line">    <span class="attr">github:</span></span><br><span class="line">      <span class="attr">url:</span> <span class="string">git@github.com:username/username.github.io.git</span>  <span class="comment"># 记得把username替换为自己的用户名</span></span><br><span class="line">      <span class="attr">branch:</span> <span class="string">master</span> <span class="comment">#2020年10月后github新建仓库默认分支改为main，注意修改</span></span><br><span class="line">    <span class="comment"># 也可以用另一种写法,二选一即可</span></span><br><span class="line">    <span class="attr">github:</span> <span class="string">git@github.com:username/username.github.io.git,master</span></span><br></pre></td></tr></table></figure>
 <blockquote>
 <p>这里<code>deploy</code>前面不要有<code>空格</code>，而所有<code>:</code>后面都要有空格。对齐缩进情况要严格按照示例来写。<code>yml</code>编译对缩进要求很严格，所以格式很重要。</p>
 </blockquote></li>
@@ -506,9 +300,7 @@ Bash Here，输入：</li>
 <li>若以上内容已经准确配置，在<code>[Blogroot]</code>路径下右键-&gt;Git
 Bash Here，输入：</li>
 </ul>
-<div class="code-wrapper"><pre><code class="hljs bash">hexo clean
-hexo generate
-hexo deploy</code></pre></div>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
 <p>不出意外，就可以在浏览器上输入<code>https://username.github.io</code>访问你的博客了。
 （记得替换<code>username</code>为自己的用户名。</p></li>
 </ol>
@@ -526,28 +318,26 @@ target="_blank" rel="noopener" href="https://dnspod.cloud.tencent.com/">腾讯�
 <p>为了能够使用自己的域名访问我们的博客，需要再进行域名绑定：</p>
 <ul>
 <li><p>首先要获取博客当前默认域名的<code>IP</code>,打开<code>cmd</code>或者<code>powershell</code>，输入</p>
-<div class="code-wrapper"><pre><code class="hljs bash">ping username.github.io
-<span class="hljs-comment"># username记得替换成你的用户名</span></code></pre></div>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ping username.github.io</span><br><span class="line"><span class="comment"># username记得替换成你的用户名</span></span><br></pre></td></tr></table></figure>
 <p><img
-src="http://img.xaopng.top/i/2024/02/27/65dd79570b13b.png" srcset="/img/loading.gif" lazyload /></p>
+src="http://img.xaopng.top/i/2024/02/27/65dd79570b13b.png" /></p>
 <blockquote>
 <p>若ping返回的是ipv地址，如下图</p>
 <figure>
-<img src="http://img.xaopng.top/i/2024/02/27/65dd8359b0d22.png" srcset="/img/loading.gif" lazyload
+<img src="http://img.xaopng.top/i/2024/02/27/65dd8359b0d22.png"
 alt="image-20240227143816259" />
 <figcaption aria-hidden="true">image-20240227143816259</figcaption>
 </figure>
 <p>输入下面命令</p>
-<div class="code-wrapper"><pre><code class="hljs bash">ping username.github.io -4
-<span class="hljs-comment"># username记得替换成你的用户名</span></code></pre></div>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ping username.github.io -4</span><br><span class="line"><span class="comment"># username记得替换成你的用户名</span></span><br></pre></td></tr></table></figure>
 </blockquote></li>
 <li><p>获取到的<code>ip</code>地址填入域名解析。</p>
 <p>这里以腾讯云为例。进入控制台-&gt;域名注册-&gt;我的域名。在购买的域名的操作栏选择解析。</p>
 <p><img
-src="http://img.xaopng.top/i/2024/02/27/65dd798f9a906.png" srcset="/img/loading.gif" lazyload /></p>
+src="http://img.xaopng.top/i/2024/02/27/65dd798f9a906.png" /></p>
 <p>进入解析页面后需要添加两条记录。</p>
 <p><img
-src="http://img.xaopng.top/i/2024/02/27/65dd79a73d82c.png" srcset="/img/loading.gif" lazyload /></p>
+src="http://img.xaopng.top/i/2024/02/27/65dd79a73d82c.png" /></p>
 <blockquote>
 <p>关于为什么要添加两条记录。此处有必要说明一下，实质起作用的其实是第一条<code>A</code>记录，而第二条<code>CNAME</code>记录指向的其实是<code>www</code>的二级域名。例如此处指向<code>www.akilar.top</code>。然后当有人用<code>www.akilar.top</code>访问时，会重定向到<code>akilar.top</code>。emmm,虽然看起来有点多此一举啦，但是<a
 target="_blank" rel="noopener" href="https://android99.me/"><span class="citation"
@@ -556,18 +346,16 @@ data-cites="安卓大佬">@安卓大佬</span></a>说这样可以提升访问成
 </ul></li>
 <li><p>在<code>[Blogroot]\source\</code>目录下新建<code>CNAME</code>文件（注意不要有后缀名，就叫<code>CNAME</code>即可，什么<code>.txt</code>、<code>.js</code>之类的后缀都不能有），在<code>CNAME</code>文件中添加上你购买的域名。</p>
 <p><img
-src="http://img.xaopng.top/i/2024/02/27/65dd7a135efd2.png" srcset="/img/loading.gif" lazyload /></p></li>
+src="http://img.xaopng.top/i/2024/02/27/65dd7a135efd2.png" /></p></li>
 <li><p>配置<code>username.github.io</code>仓库。</p>
 <p>打开<code>username.github.io</code>，点击仓库页面右上角的setting</p>
 <p><img
-src="http://img.xaopng.top/i/2024/02/27/65dd7a41160d4.png" srcset="/img/loading.gif" lazyload /></p>
+src="http://img.xaopng.top/i/2024/02/27/65dd7a41160d4.png" /></p>
 <p>下拉找到Github Pages栏，在Custom domain中填入你购买的域名。</p>
 <p><img
-src="http://img.xaopng.top/i/2024/02/27/65dd7a6256f25.png" srcset="/img/loading.gif" lazyload /></p></li>
+src="http://img.xaopng.top/i/2024/02/27/65dd7a6256f25.png" /></p></li>
 <li><p>最后，重新部署一下<code>hexo</code>即可通过你的域名来访问博客了。</p>
-<div class="code-wrapper"><pre><code class="hljs bash">hexo clean
-hexo generate
-hexo depoly</code></pre></div></li>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo depoly</span><br></pre></td></tr></table></figure></li>
 </ol>
 <h2 id="版本控制">版本控制</h2>
 <h3 id="源码存放方案开源or闭源">源码存放方案：开源or闭源</h3>
@@ -581,62 +369,30 @@ hexo depoly</code></pre></div></li>
 <li><p>创建存放源码的私有仓库</p>
 <p>我们需要创建一个用来存放<code>Hexo</code>博客源码的私有仓库<code>[SourceRepo]</code>，这点在Win10的<code>Hexo</code>博客搭建教程中有提到。为了保持教程的连贯，此处再写一遍。</p>
 <p><img
-src="http://img.xaopng.top/i/2024/02/27/65dd7b9ba73b4.png" srcset="/img/loading.gif" lazyload /></p>
+src="http://img.xaopng.top/i/2024/02/27/65dd7b9ba73b4.png" /></p>
 <p>创建完成后，需要把博客的源码<code>push</code>到这里。首先获取远程仓库地址，此处虽然<code>SSH</code>和<code>HTTPS</code>均可。<code>SSH</code>在绑定过<code>ssh key</code>的设备上无需再输入密码，<code>HTTPS</code>则需要输入密码，但是<code>SSH</code>偶尔会遇到端口占用的情况。请自主选择。</p>
 <p><img
-src="http://img.xaopng.top/i/2024/02/27/65dd7bc0e63fc.png" srcset="/img/loading.gif" lazyload /></p></li>
+src="http://img.xaopng.top/i/2024/02/27/65dd7bc0e63fc.png" /></p></li>
 <li><p>在<code>[Blogroot]</code>路径下右键-&gt;Git Bash Here，输入</p>
-<div class="code-wrapper"><pre><code class="hljs bash">git init <span class="hljs-comment"># 初始化git</span></code></pre></div>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git init <span class="comment"># 初始化git</span></span><br></pre></td></tr></table></figure>
 <p>这一步会在你的博客目录下新建一个<code>.git</code>文件夹。因为是隐藏文件夹，所以需要你先确保当前目录下隐藏文件夹可见才能看到它。</p></li>
 <li><p>在远端提交前，我们需要先调整一下屏蔽项，能够使用指令进行安装的内容不包括在需要提交的源码内，这样可以显著减少需要提交的文件量和加快提交速度。打开<code>[Blogroot]/.gitignore</code>（也是隐藏文件）,输入以下内容：</p>
-<div class="code-wrapper"><pre><code class="hljs txt">.DS_Store
-Thumbs.db
-db.json
-*.log
-node_modules/
-public/
-.deploy*/
-.deploy_git*/
-.idea
-themes/butterfly/.git</code></pre></div>
+<figure class="highlight txt"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">.DS_Store</span><br><span class="line">Thumbs.db</span><br><span class="line">db.json</span><br><span class="line">*.log</span><br><span class="line">node_modules/</span><br><span class="line">public/</span><br><span class="line">.deploy*/</span><br><span class="line">.deploy_git*/</span><br><span class="line">.idea</span><br><span class="line">themes/butterfly/.git</span><br></pre></td></tr></table></figure>
 <p>如果不是<code>butterfly</code>主题，记得替换最后一行内容为你自己当前使用的主题。</p></li>
 <li><p>然后尝试第一次提交你的目录到远程仓库,依然是在<code>[Blogroot]</code>路径下右键-&gt;Git
 Bash Here，输入：</p>
-<div class="code-wrapper"><pre><code class="hljs bash">git add . <span class="hljs-comment"># 添加文件到本地仓库</span>
-git commit -m <span class="hljs-string">&quot;自定义内容即可&quot;</span> <span class="hljs-comment"># 添加文件描述信息</span>
-git remote add origin git@github.com:username/YourRepositoryName.git <span class="hljs-comment">#链接远程仓库地址，创建主分支</span>
-git push -u origin main</code></pre></div></li>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git add . <span class="comment"># 添加文件到本地仓库</span></span><br><span class="line">git commit -m <span class="string">&quot;自定义内容即可&quot;</span> <span class="comment"># 添加文件描述信息</span></span><br><span class="line">git remote add origin git@github.com:username/YourRepositoryName.git <span class="comment">#链接远程仓库地址，创建主分支</span></span><br><span class="line">git push -u origin main</span><br></pre></td></tr></table></figure></li>
 <li><p>偶尔会遇到一些与远端内容不一致的问题，一般是因为在创建远程仓库时点选了生成<code>README.md</code>或者<code>license</code>的选项，输入指令：</p>
-<div class="code-wrapper"><pre><code class="hljs bash"><span class="hljs-comment"># 要是提示origin已经存在，那么执行</span>
-git remote <span class="hljs-built_in">rm</span> origin
-<span class="hljs-comment"># 然后再重新尝试</span>
-git remote add origin git@github.com:username/YourRepositoryName.git
-
-git pull origin YourBranchName <span class="hljs-comment"># 把远程仓库的新增的内容覆盖到本地仓库</span>
-
-git push -u origin YourBranchName -f
-<span class="hljs-comment"># 把本地仓库的文件推送到远程仓库的主分支，</span>
-<span class="hljs-comment">#YourBranchName记得替换成分支名，一般是master。</span>
-<span class="hljs-comment">#2020年10月后github新建仓库默认分支改为main</span>
-<span class="hljs-comment"># -f 是强制提交，主要是因为前后版本不一致造成的。</span>
-<span class="hljs-comment"># 然后执行以下指令生成网站并部署到 GitHub 上。</span>
-<span class="hljs-comment">#(Hexo部署网站是根据_config.yml内的配置，所以不受影响）</span>
-hexo generate
-hexo deploy</code></pre></div></li>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 要是提示origin已经存在，那么执行</span></span><br><span class="line">git remote <span class="built_in">rm</span> origin</span><br><span class="line"><span class="comment"># 然后再重新尝试</span></span><br><span class="line">git remote add origin git@github.com:username/YourRepositoryName.git</span><br><span class="line"></span><br><span class="line">git pull origin YourBranchName <span class="comment"># 把远程仓库的新增的内容覆盖到本地仓库</span></span><br><span class="line"></span><br><span class="line">git push -u origin YourBranchName -f</span><br><span class="line"><span class="comment"># 把本地仓库的文件推送到远程仓库的主分支，</span></span><br><span class="line"><span class="comment">#YourBranchName记得替换成分支名，一般是master。</span></span><br><span class="line"><span class="comment">#2020年10月后github新建仓库默认分支改为main</span></span><br><span class="line"><span class="comment"># -f 是强制提交，主要是因为前后版本不一致造成的。</span></span><br><span class="line"><span class="comment"># 然后执行以下指令生成网站并部署到 GitHub 上。</span></span><br><span class="line"><span class="comment">#(Hexo部署网站是根据_config.yml内的配置，所以不受影响）</span></span><br><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure></li>
 </ol></li>
 </ul>
 <h3 id="博客管理流程">博客管理流程</h3>
 <p>在本地对博客进行修改（添加新博文、修改样式等等）后，通过下面的流程进行管理</p>
 <ol type="1">
 <li><p>依次执行指令</p>
-<div class="code-wrapper"><pre><code class="hljs bash">git add .
-git commit -m <span class="hljs-string">&quot;...&quot;</span>
-git push
-<span class="hljs-comment"># 将改动推送到 GitHub</span></code></pre></div></li>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">&quot;...&quot;</span></span><br><span class="line">git push</span><br><span class="line"><span class="comment"># 将改动推送到 GitHub</span></span><br></pre></td></tr></table></figure></li>
 <li><p>然后才执行</p>
-<div class="code-wrapper"><pre><code class="hljs bash">hexo generate -d
-<span class="hljs-comment"># 或者</span>
-hexo g -d</code></pre></div>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo generate -d</span><br><span class="line"><span class="comment"># 或者</span></span><br><span class="line">hexo g -d</span><br></pre></td></tr></table></figure>
 <p>将本地文件发布网站到<code>master</code>分支上。(2020年10月后github新建仓库默认分支由master改为main)</p></li>
 </ol>
 <h3 id="本地资料丢失或多pc同步">本地资料丢失或多PC同步</h3>
@@ -645,8 +401,7 @@ hexo g -d</code></pre></div>
 <li><p>使用<code>git clone git@github.com:Username/[HexoSourceRepo].git</code>拷贝仓库；
 此处的<code>[HexoSourceRepo]</code>指代上述博客源码存放方案中存放源码的仓库名。</p></li>
 <li><p>在本地新拷贝的<code>[HexoSourceRepo]</code>文件夹下通过终端依次执行下列指令：</p>
-<div class="code-wrapper"><pre><code class="hljs bash">npm install -g hexo-cli
-npm install</code></pre></div></li>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install -g hexo-cli</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure></li>
 </ol>
 <h3 id="指令脚本">指令脚本</h3>
 <ul>
@@ -655,688 +410,19 @@ npm install</code></pre></div></li>
 在<code>[Blogroot]</code>文件夹下新建三个<code>txt</code>文件，分别命名为<code>git-pull</code>、<code>git-push</code>、<code>hexo-publish</code>,打开后依次在里面输入相应的命令。</p>
 <ul>
 <li><p>git-pull（用来从远程仓库拉取最新更改，适用于多PC或多系统端之间的版本对接）</p>
-<div class="code-wrapper"><pre><code class="hljs bash">git pull</code></pre></div></li>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git pull</span><br></pre></td></tr></table></figure></li>
 <li><p>git-push（用于提交每次的修改到远程仓库）</p>
-<div class="code-wrapper"><pre><code class="hljs bash">git add .
-git commit -m <span class="hljs-string">&quot;deploy from hexo-admin&quot;</span>
-git push</code></pre></div></li>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">&quot;deploy from hexo-admin&quot;</span></span><br><span class="line">git push</span><br></pre></td></tr></table></figure></li>
 <li><p>hexo-publish（清空本地缓存后重新部署博客页面）</p>
-<div class="code-wrapper"><pre><code class="hljs bash">hexo clean
-hexo generate
-hexo depoly</code></pre></div>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo generate</span><br><span class="line">hexo depoly</span><br></pre></td></tr></table></figure>
 <p>之后将<code>.txt</code>后缀更改为<code>.sh</code>后缀，就是一个可执行脚本了。</p></li>
 </ul></li>
 <li><p>升级版</p>
 <p>在hexo根目录<code>[blogroot]/</code>下新建一个脚本文件：<code>menu.sh</code>,将以下内容复制进去。</p>
-<div class="code-wrapper"><pre><code class="hljs bash"><span class="hljs-meta">#!/bin/sh</span>
-<span class="hljs-comment">#本脚本用于群友交流，完全开源，可以随意传阅，不过希望保留出处。</span>
-<span class="hljs-comment">#Author：Akilar</span>
-<span class="hljs-comment">#Modify:Hajeekn(SL)</span>
-<span class="hljs-comment">#Updated: 2021-08-09</span>
-<span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;==================================================&quot;</span>
-<span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;              欢迎使用Hexo控制脚本!&quot;</span>
-<span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;                更方便的魔改版本&quot;</span>
-<span class="hljs-built_in">echo</span> <span class="hljs-string">&quot;==================================================&quot;</span>
-HexoPath=$(<span class="hljs-built_in">cd</span> <span class="hljs-string">&quot;<span class="hljs-subst">$(dirname <span class="hljs-string">&quot;<span class="hljs-variable">$0</span>&quot;</span>)</span>&quot;</span>; <span class="hljs-built_in">pwd</span>)
-<span class="hljs-built_in">cd</span> <span class="hljs-variable">$&#123;HexoPath&#125;</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32m Blog 根目录：&quot;</span><span class="hljs-variable">$&#123;HexoPath&#125;</span><span class="hljs-string">&quot;\033[0m\n&quot;</span>
-
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32m [0] \033[0m 退出菜单\n&quot;</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[31m =============以下功能需要在空文件夹内使用========\033[0m\n&quot;</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32m [1] \033[0m 初始化安装Hexo（仅在第一次安装时使用）\n&quot;</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32m [2] \033[0m 从云端恢复Hexo\n&quot;</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[31m =============以下功能需要在Hexo文件夹内使用======\033[0m\n&quot;</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32m [3] \033[0m 开启本地预览\n&quot;</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32m [4] \033[0m 重新编译后开启本地预览\033[33m（修改过_config.yml需使用这个才能看到变化）\033[0m\n&quot;</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32m [5] \033[0m 新建博客文章\n&quot;</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32m [6] \033[0m 新建博客页面\n&quot;</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32m [7] \033[0m 部署页面到博客网站\n&quot;</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32m [8] \033[0m 从Github拉取最新版本\n&quot;</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32m [9] \033[0m 提交本地修改到GitHub\n&quot;</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32m [10] \033[0m 升级Hexo及插件\033[31m（慎用）\033[0m\n&quot;</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32m [11] \033[0m 重新安装依赖\n&quot;</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32m [12] \033[0m 安装butterfly主题\n&quot;</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32m [13] \033[0m 安装volantis主题\n&quot;</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32m [14] \033[0m 安装Hexo-Admin \033[33m(用于管理或撰写Hexo博文，适合初学者使用)\033[0m\n&quot;</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[31m =============以下功能为全局指令==================\033[0m\n&quot;</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32m [15] \033[0m 安装ssh密钥\n&quot;</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32m [16] \033[0m 验证ssh密钥\n&quot;</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32m [17] \033[0m 切换npm源为阿里镜像\033[33m (当使用publish命令时会出现错误,适用于不发布包的人)\033[0m\n&quot;</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32m [18] \033[0m 切换npm源为官方源\033[33m (安装慢,但可以使用所有命令)\033[0m\n&quot;</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32m [19] \033[0m 安装 Git\n&quot;</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32m [20] \033[0m 安装 Node.js\n&quot;</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;请选择需要的功能，默认选择\033[32m [3] \033[0m开启本地预览\n&quot;</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;选择：\n&quot;</span>
-<span class="hljs-built_in">read</span> answer
-
-<span class="hljs-keyword">if</span> [ <span class="hljs-string">&quot;<span class="hljs-variable">$&#123;answer&#125;</span>&quot;</span> = <span class="hljs-string">&quot;1&quot;</span> ]; <span class="hljs-keyword">then</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 正在初始化,请坐和放宽...\n&quot;</span>
-<span class="hljs-built_in">mkdir</span> Hexo
-<span class="hljs-built_in">cd</span> Hexo
-npm config <span class="hljs-built_in">set</span> registry https://registry.npmmirror.com
-npm install -g hexo-cli
-hexo init
-npm install --save
-npm install hexo-deployer-git --save
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 请查看您当前的Hexo版本...\n&quot;</span>
-hexo version
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 安装完成，您可以开始您的Hexo之旅了！\n&quot;</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 请将本脚本文件放入Hexo文件夹以继续使用其他功能！\n&quot;</span>
-<span class="hljs-built_in">sleep</span> 5s
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m \033[33m请将本脚本文件放入Hexo文件夹以继续使用其他功能！\033[0m\n&quot;</span>
-<span class="hljs-built_in">sleep</span> 5s
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m \033[31m请将本脚本文件放入Hexo文件夹以继续使用其他功能！\033[0m\n&quot;</span>
-<span class="hljs-built_in">sleep</span> 5s
-<span class="hljs-built_in">exit</span> 0
-<span class="hljs-keyword">else</span>
-<span class="hljs-keyword">if</span> [ <span class="hljs-string">&quot;<span class="hljs-variable">$&#123;answer&#125;</span>&quot;</span> = <span class="hljs-string">&quot;2&quot;</span> ]; <span class="hljs-keyword">then</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 启动拉取器 ...\n&quot;</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;请输入仓库源码地址: &quot;</span>
-<span class="hljs-built_in">read</span> giturl
-git <span class="hljs-built_in">clone</span> <span class="hljs-variable">$&#123;giturl&#125;</span> Hexo
-<span class="hljs-built_in">cd</span> Hexo
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 恢复Hexo中...\n&quot;</span>
-npm config <span class="hljs-built_in">set</span> registry https://registry.npmmirror.com
-npm install -g hexo-cli
-<span class="hljs-comment"># npm install gulp-cli -g #全局安装gulp，未配置不用开启</span>
-npm install --save
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 恢复完成，您可以开始您的Hexo之旅了！\n&quot;</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 请将本脚本文件放入Hexo文件夹以继续使用其他功能！\n&quot;</span>
-<span class="hljs-built_in">sleep</span> 5s
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m \033[33m请将本脚本文件放入Hexo文件夹以继续使用其他功能！\033[0m\n&quot;</span>
-<span class="hljs-built_in">sleep</span> 5s
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m \033[31m请将本脚本文件放入Hexo文件夹以继续使用其他功能！\033[0m\n&quot;</span>
-<span class="hljs-built_in">sleep</span> 5s
-<span class="hljs-built_in">exit</span> 0
-<span class="hljs-keyword">else</span>
-<span class="hljs-keyword">if</span> [ <span class="hljs-string">&quot;<span class="hljs-variable">$&#123;answer&#125;</span>&quot;</span> = <span class="hljs-string">&quot;3&quot;</span> ] || [ <span class="hljs-string">&quot;<span class="hljs-variable">$&#123;answer&#125;</span>&quot;</span> = <span class="hljs-string">&quot;&quot;</span> ]; <span class="hljs-keyword">then</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 正在启动本地预览，可以按Ctrl+C退出\n&quot;</span>
-hexo s
-<span class="hljs-built_in">exec</span> <span class="hljs-variable">$&#123;HexoPath&#125;</span>/menu.sh
-<span class="hljs-keyword">else</span>
-<span class="hljs-keyword">if</span> [ <span class="hljs-string">&quot;<span class="hljs-variable">$&#123;answer&#125;</span>&quot;</span> = <span class="hljs-string">&quot;4&quot;</span> ]; <span class="hljs-keyword">then</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 正在清理本地缓存...\n&quot;</span>
-hexo clean
-<span class="hljs-comment"># printf &quot;\033[32mINFO \033[0m 正在更新番剧列表...\n&quot;</span>
-<span class="hljs-comment"># hexo bangumi -u #bilibili追番插件，未配置无需开启</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 正在重新编译静态页面...\n&quot;</span>
-hexo generate
-<span class="hljs-comment"># printf &quot;\033[32mINFO \033[0m 正在压缩静态资源...\n&quot;</span>
-<span class="hljs-comment"># gulp #gulp插件，未配置无需开启</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 正在开启本地预览，可以按Ctrl+C退出\n&quot;</span>
-hexo server
-<span class="hljs-built_in">exec</span> <span class="hljs-variable">$&#123;HexoPath&#125;</span>/menu.sh
-<span class="hljs-keyword">else</span>
-<span class="hljs-keyword">if</span> [ <span class="hljs-string">&quot;<span class="hljs-variable">$&#123;answer&#125;</span>&quot;</span> = <span class="hljs-string">&quot;5&quot;</span> ] || [ <span class="hljs-string">&quot;<span class="hljs-variable">$&#123;answer&#125;</span>&quot;</span> = <span class="hljs-string">&quot;&quot;</span> ]; <span class="hljs-keyword">then</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 请输入您想要新建的文章标题\n&quot;</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m \033[33m标题中的各类标点符号和空格，请用短横\&quot;-\&quot;代替！\033[0m\n&quot;</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;您的文章标题：&quot;</span>
-<span class="hljs-built_in">read</span> posttitle
-hexo new post <span class="hljs-variable">$&#123;posttitle&#125;</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 新建完成，正在尝试为您打开文章文件\n&quot;</span>
-start <span class="hljs-variable">$&#123;HexoPath&#125;</span>/source/_posts/<span class="hljs-variable">$&#123;posttitle&#125;</span>.md
-<span class="hljs-built_in">exec</span> <span class="hljs-variable">$&#123;HexoPath&#125;</span>/menu.sh
-<span class="hljs-keyword">else</span>
-<span class="hljs-keyword">if</span> [ <span class="hljs-string">&quot;<span class="hljs-variable">$&#123;answer&#125;</span>&quot;</span> = <span class="hljs-string">&quot;6&quot;</span> ] || [ <span class="hljs-string">&quot;<span class="hljs-variable">$&#123;answer&#125;</span>&quot;</span> = <span class="hljs-string">&quot;&quot;</span> ]; <span class="hljs-keyword">then</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 请输入您想要新建的页面名称\n&quot;</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m \033[33m名称中的各类标点符号和空格，请用短横\&quot;-\&quot;代替！\033[0m\n&quot;</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;您的页面名称：&quot;</span>
-<span class="hljs-built_in">read</span> pagename
-hexo new page <span class="hljs-variable">$&#123;pagename&#125;</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 新建完成，正在尝试为您打开页面文件\n&quot;</span>
-start <span class="hljs-variable">$&#123;HexoPath&#125;</span>/source/<span class="hljs-variable">$&#123;pagename&#125;</span>/index.md
-<span class="hljs-built_in">exec</span> <span class="hljs-variable">$&#123;HexoPath&#125;</span>/menu.sh
-<span class="hljs-keyword">else</span>
-<span class="hljs-keyword">if</span> [ <span class="hljs-string">&quot;<span class="hljs-variable">$&#123;answer&#125;</span>&quot;</span> = <span class="hljs-string">&quot;7&quot;</span> ]; <span class="hljs-keyword">then</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 正在清理本地缓存...\n&quot;</span>
-hexo clean
-<span class="hljs-comment"># printf &quot;\033[32mINFO \033[0m 正在更新番剧列表...\n&quot;</span>
-<span class="hljs-comment"># hexo bangumi -u #bilibili追番插件，未配置无需开启</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 正在重新编译静态页面...\n&quot;</span>
-hexo generate
-<span class="hljs-comment"># printf &quot;\033[32mINFO \033[0m 正在压缩静态资源...\n&quot;</span>
-<span class="hljs-comment"># gulp #gulp插件，未配置无需开启</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 正在准备将最新修改部署至Hexo...\n&quot;</span>
-hexo deploy
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 部署完成，您的网站已经是最新版本！\n&quot;</span>
-<span class="hljs-built_in">sleep</span> 1s
-<span class="hljs-built_in">exec</span> <span class="hljs-variable">$&#123;HexoPath&#125;</span>/menu.sh
-<span class="hljs-keyword">else</span>
-<span class="hljs-keyword">if</span> [ <span class="hljs-string">&quot;<span class="hljs-variable">$&#123;answer&#125;</span>&quot;</span> = <span class="hljs-string">&quot;8&quot;</span> ]; <span class="hljs-keyword">then</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 正在启动拉取器...\n&quot;</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;请输入分支名: &quot;</span>
-<span class="hljs-built_in">read</span> branch
-git pull origin <span class="hljs-variable">$branch</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 拉取完毕，您的博客已是最新版本！\n&quot;</span>
-<span class="hljs-built_in">sleep</span> 1s
-<span class="hljs-built_in">exec</span> <span class="hljs-variable">$&#123;HexoPath&#125;</span>/menu.sh
-<span class="hljs-keyword">else</span>
-<span class="hljs-keyword">if</span> [ <span class="hljs-string">&quot;<span class="hljs-variable">$&#123;answer&#125;</span>&quot;</span> = <span class="hljs-string">&quot;9&quot;</span> ]; <span class="hljs-keyword">then</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 正在提交最新修改到GitHub...\n&quot;</span>
-git add .
-git commit -m <span class="hljs-string">&quot;Update posts content&quot;</span>
-git push origin <span class="hljs-variable">$branch</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 提交完毕，您的修改已上传至Github！\n&quot;</span>
-<span class="hljs-built_in">sleep</span> 1s
-<span class="hljs-built_in">exec</span> <span class="hljs-variable">$&#123;HexoPath&#125;</span>/menu.sh
-<span class="hljs-keyword">else</span>
-<span class="hljs-keyword">if</span> [ <span class="hljs-string">&quot;<span class="hljs-variable">$&#123;answer&#125;</span>&quot;</span> = <span class="hljs-string">&quot;10&quot;</span> ]; <span class="hljs-keyword">then</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 请先确认当前版本 ...\n&quot;</span>
-hexo version
-<span class="hljs-built_in">sleep</span> 3s
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 即将为您全局升级hexo-cli...\n&quot;</span>
-npm install hexo-cli -g
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m hexo-cli升级完成，请查看当前版本。\n&quot;</span>
-hexo version
-<span class="hljs-built_in">sleep</span> 3s
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 即将为您升级npm-check...\n&quot;</span>
-npm install -g npm-check
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m npm-check升级完成！\n&quot;</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 正在使用npm-check检查系统是否有可升级插件...\n&quot;</span>
-npm-check
-<span class="hljs-built_in">sleep</span> 3s
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 即将为您升级npm-upgrade...\n&quot;</span>
-npm install -g npm-upgrade
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 正在使用npm-upgrade升级插件...\n&quot;</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 您可以在接下来的过程中主动选择是否升级插件\n&quot;</span>
-npm-upgrade
-<span class="hljs-built_in">sleep</span> 1s
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 正在为您保存升级结果...\n&quot;</span>
-npm update -g
-npm update --save
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 恭喜您，您的Hexo已经是最新版本\n&quot;</span>
-<span class="hljs-built_in">sleep</span> 2s
-<span class="hljs-built_in">exec</span> <span class="hljs-variable">$&#123;HexoPath&#125;</span>/menu.sh
-<span class="hljs-keyword">else</span>
-<span class="hljs-keyword">if</span> [ <span class="hljs-string">&quot;<span class="hljs-variable">$&#123;answer&#125;</span>&quot;</span> = <span class="hljs-string">&quot;11&quot;</span> ]; <span class="hljs-keyword">then</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 正在清空当前依赖环境 ...\n&quot;</span>
-<span class="hljs-built_in">rm</span> node_modules
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 正在清空当前依赖关系锁定 ...\n&quot;</span>
-<span class="hljs-built_in">rm</span> package-lock.json
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 正在清空当前依赖关系缓存 ...\n&quot;</span>
-npm cache clean --force
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 正在将npm源替换为阿里云镜像 ...\n&quot;</span>
-npm config <span class="hljs-built_in">set</span> registry https://registry.npmmirror.com
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 正在重新安装当前依赖环境 ...\n&quot;</span>
-npm install
-<span class="hljs-built_in">sleep</span> 2s
-<span class="hljs-built_in">exec</span> <span class="hljs-variable">$&#123;HexoPath&#125;</span>/menu.sh
-<span class="hljs-keyword">else</span>
-<span class="hljs-keyword">if</span> [ <span class="hljs-string">&quot;<span class="hljs-variable">$&#123;answer&#125;</span>&quot;</span> = <span class="hljs-string">&quot;12&quot;</span> ]; <span class="hljs-keyword">then</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 正在为您下载最新稳定版butterfly主题 ...\n&quot;</span>
-git <span class="hljs-built_in">clone</span> -b master https://gitee.com/iamjerryw/hexo-theme-butterfly.git themes/butterfly
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 正在为您安装必要依赖！\n&quot;</span>
-npm install hexo-renderer-pug hexo-renderer-stylus --save
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 安装完成，感谢您对butterfly的支持！\n&quot;</span>
-<span class="hljs-built_in">sleep</span> 1s
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 请在/Hexo/_config.yml中将theme修改为butterfly以激活主题！\n&quot;</span>
-<span class="hljs-built_in">sleep</span> 3s
-<span class="hljs-built_in">exec</span> <span class="hljs-variable">$&#123;HexoPath&#125;</span>/menu.sh
-<span class="hljs-keyword">else</span>
-<span class="hljs-keyword">if</span> [ <span class="hljs-string">&quot;<span class="hljs-variable">$&#123;answer&#125;</span>&quot;</span> = <span class="hljs-string">&quot;13&quot;</span> ]; <span class="hljs-keyword">then</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 正在为您下载最新稳定版volantis主题 ...\n&quot;</span>
-git <span class="hljs-built_in">clone</span> https://github.com/volantis-x/hexo-theme-volantis themes/volantis
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 正在安装本地搜索必要依赖！\n&quot;</span>
-npm install hexo-generator-search --save
-npm install hexo-generator-json-content --save
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 正在安装页面渲染必要依赖！\n&quot;</span>
-npm install hexo-renderer-stylus --save
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 安装完成，感谢您对volantis的支持！\n&quot;</span>
-<span class="hljs-built_in">sleep</span> 1s
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 请在/Hexo/_config.yml中将theme修改为volantis以激活主题！\n&quot;</span>
-<span class="hljs-built_in">sleep</span> 3s
-<span class="hljs-built_in">exec</span> <span class="hljs-variable">$&#123;HexoPath&#125;</span>/menu.sh
-<span class="hljs-keyword">else</span>
-<span class="hljs-keyword">if</span> [ <span class="hljs-string">&quot;<span class="hljs-variable">$&#123;answer&#125;</span>&quot;</span> = <span class="hljs-string">&quot;14&quot;</span> ]; <span class="hljs-keyword">then</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 正在为您下载Hexo-Admin插件 ...\n&quot;</span>
-npm install hexo-admin --save
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 安装完成，即将为您启动本地预览！\n&quot;</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 请访问 http://localhost:4000/admin/ 进行博文编辑！\n&quot;</span>
-<span class="hljs-built_in">sleep</span> 2s
-hexo server
-<span class="hljs-built_in">sleep</span> 1s
-<span class="hljs-built_in">exec</span> <span class="hljs-variable">$&#123;HexoPath&#125;</span>/menu.sh
-
-<span class="hljs-keyword">else</span>
-<span class="hljs-keyword">if</span> [ <span class="hljs-string">&quot;<span class="hljs-variable">$&#123;answer&#125;</span>&quot;</span> = <span class="hljs-string">&quot;15&quot;</span> ]; <span class="hljs-keyword">then</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 正在启动Git工具...\n&quot;</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;请输入 GitHub 用户名: &quot;</span>
-<span class="hljs-built_in">read</span> githubuser
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;请输入 GitHub 邮箱: &quot;</span>
-<span class="hljs-built_in">read</span> githubemail
-git config --global user.name <span class="hljs-string">&quot;<span class="hljs-variable">$githubuser</span>&quot;</span>
-git config --global user.email <span class="hljs-string">&quot;<span class="hljs-variable">$githubemail</span>&quot;</span>
-ssh-keygen -t rsa -C <span class="hljs-variable">$githubemail</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 即将打开sshkey，复制后可按 Ctrl+D 返回...\n&quot;</span>
-<span class="hljs-built_in">sleep</span> 2s
-less ~/.ssh/id_rsa.pub
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 配置完成，请将sshkey添加到Github！\n&quot;</span>
-<span class="hljs-built_in">sleep</span> 1s
-<span class="hljs-built_in">exec</span> <span class="hljs-variable">$&#123;HexoPath&#125;</span>/menu.sh
-<span class="hljs-keyword">else</span>
-<span class="hljs-keyword">if</span> [ <span class="hljs-string">&quot;<span class="hljs-variable">$&#123;answer&#125;</span>&quot;</span> = <span class="hljs-string">&quot;16&quot;</span> ]; <span class="hljs-keyword">then</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 正在验证SSHkey是否配置成功 ...\n&quot;</span>
-ssh -T git@github.com
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 验证完毕，您的SSHkey已成功绑定至Github！\n&quot;</span>
-<span class="hljs-built_in">sleep</span> 1s
-<span class="hljs-built_in">exec</span> <span class="hljs-variable">$&#123;HexoPath&#125;</span>/menu.sh
-<span class="hljs-keyword">else</span>
-<span class="hljs-keyword">if</span> [ <span class="hljs-string">&quot;<span class="hljs-variable">$&#123;answer&#125;</span>&quot;</span> = <span class="hljs-string">&quot;17&quot;</span> ]; <span class="hljs-keyword">then</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 正在查询当前npm源 ...\n&quot;</span>
-npm config get registry
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 正在将npm源替换为阿里云镜像 ...\n&quot;</span>
-npm config <span class="hljs-built_in">set</span> registry https://registry.npmmirror.com
-<span class="hljs-built_in">sleep</span> 2s
-<span class="hljs-built_in">exec</span> <span class="hljs-variable">$&#123;HexoPath&#125;</span>/menu.sh
-<span class="hljs-keyword">else</span>
-<span class="hljs-keyword">if</span> [ <span class="hljs-string">&quot;<span class="hljs-variable">$&#123;answer&#125;</span>&quot;</span> = <span class="hljs-string">&quot;18&quot;</span> ]; <span class="hljs-keyword">then</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 正在查询当前npm源 ...\n&quot;</span>
-npm config get registry
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 正在将npm源替换为官方源 ...\n&quot;</span>
-npm config <span class="hljs-built_in">set</span> registry https://registry.npmjs.org
-<span class="hljs-built_in">sleep</span> 2s
-<span class="hljs-built_in">exec</span> <span class="hljs-variable">$&#123;HexoPath&#125;</span>/menu.sh
-<span class="hljs-keyword">else</span>
-<span class="hljs-keyword">if</span> [ <span class="hljs-string">&quot;<span class="hljs-variable">$&#123;answer&#125;</span>&quot;</span> = <span class="hljs-string">&quot;19&quot;</span> ]; <span class="hljs-keyword">then</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 安装 Git 暂不支持linux、macos,如果你是linux或macos用户,请使用系统自带的包管理器安装 ...\n&quot;</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 启动下载器 ...\n&quot;</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;安装默认使用32包,如果要安装64请更改sh源码或手动将32替换为64 ...\n&quot;</span>
-<span class="hljs-built_in">mkdir</span> temp
-<span class="hljs-built_in">cd</span> temp
-certutil -urlcache -<span class="hljs-built_in">split</span> -f https://npmmirror.com/mirrors/git-for-windows/v2.32.0.windows.2/Git-2.32.0.2-32-bit.exe
-./Git-2.32.0.2-32-bit.exe
-<span class="hljs-built_in">rm</span> -r temp
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;安装完成&quot;</span>
-<span class="hljs-built_in">sleep</span> 2s
-<span class="hljs-built_in">exec</span> <span class="hljs-variable">$&#123;HexoPath&#125;</span>/menu.sh
-<span class="hljs-keyword">else</span>
-<span class="hljs-keyword">if</span> [ <span class="hljs-string">&quot;<span class="hljs-variable">$&#123;answer&#125;</span>&quot;</span> = <span class="hljs-string">&quot;20&quot;</span> ]; <span class="hljs-keyword">then</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 安装 Node.js 暂不支持linux、macos,如果你是linux或macos用户,请使用系统自带的包管理器安装 ...\n&quot;</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 启动下载器 ...\n&quot;</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;安装默认使用32包,如果要安装64请更改sh源码或手动将32替换为64 ...\n&quot;</span>
-<span class="hljs-built_in">mkdir</span> temp
-<span class="hljs-built_in">cd</span> temp
-certutil -urlcache -<span class="hljs-built_in">split</span> -f https://npmmirror.com/mirrors/node/latest-v12.x/node-v12.22.3-x86.msi
-./node-v12.22.3-x86.msi
-<span class="hljs-built_in">cd</span> ../
-<span class="hljs-built_in">rm</span> -r temp
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;安装完成&quot;</span>
-<span class="hljs-built_in">sleep</span> 2s
-<span class="hljs-built_in">exec</span> <span class="hljs-variable">$&#123;HexoPath&#125;</span>/menu.sh
-<span class="hljs-keyword">else</span>
-<span class="hljs-keyword">if</span> [ <span class="hljs-string">&quot;<span class="hljs-variable">$&#123;answer&#125;</span>&quot;</span> = <span class="hljs-string">&quot;0&quot;</span> ]; <span class="hljs-keyword">then</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[32mINFO \033[0m 欢迎下次光临！\n&quot;</span>
-<span class="hljs-built_in">sleep</span> 1s
-<span class="hljs-built_in">exit</span> 0
-<span class="hljs-keyword">else</span>
-<span class="hljs-built_in">printf</span> <span class="hljs-string">&quot;\033[31mERROR \033[0m 输入错误，请返回重新选择...\n&quot;</span>
-<span class="hljs-built_in">sleep</span> 1s
-<span class="hljs-built_in">exec</span> <span class="hljs-variable">$&#123;HexoPath&#125;</span>/menu.sh
-<span class="hljs-keyword">fi</span>
-<span class="hljs-keyword">fi</span>
-<span class="hljs-keyword">fi</span>
-<span class="hljs-keyword">fi</span>
-<span class="hljs-keyword">fi</span>
-<span class="hljs-keyword">fi</span>
-<span class="hljs-keyword">fi</span>
-<span class="hljs-keyword">fi</span>
-<span class="hljs-keyword">fi</span>
-<span class="hljs-keyword">fi</span>
-<span class="hljs-keyword">fi</span>
-<span class="hljs-keyword">fi</span>
-<span class="hljs-keyword">fi</span>
-<span class="hljs-keyword">fi</span>
-<span class="hljs-keyword">fi</span>
-<span class="hljs-keyword">fi</span>
-<span class="hljs-keyword">fi</span>
-<span class="hljs-keyword">fi</span>
-<span class="hljs-keyword">fi</span>
-<span class="hljs-keyword">fi</span>
-<span class="hljs-keyword">fi</span></code></pre></div>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br><span class="line">160</span><br><span class="line">161</span><br><span class="line">162</span><br><span class="line">163</span><br><span class="line">164</span><br><span class="line">165</span><br><span class="line">166</span><br><span class="line">167</span><br><span class="line">168</span><br><span class="line">169</span><br><span class="line">170</span><br><span class="line">171</span><br><span class="line">172</span><br><span class="line">173</span><br><span class="line">174</span><br><span class="line">175</span><br><span class="line">176</span><br><span class="line">177</span><br><span class="line">178</span><br><span class="line">179</span><br><span class="line">180</span><br><span class="line">181</span><br><span class="line">182</span><br><span class="line">183</span><br><span class="line">184</span><br><span class="line">185</span><br><span class="line">186</span><br><span class="line">187</span><br><span class="line">188</span><br><span class="line">189</span><br><span class="line">190</span><br><span class="line">191</span><br><span class="line">192</span><br><span class="line">193</span><br><span class="line">194</span><br><span class="line">195</span><br><span class="line">196</span><br><span class="line">197</span><br><span class="line">198</span><br><span class="line">199</span><br><span class="line">200</span><br><span class="line">201</span><br><span class="line">202</span><br><span class="line">203</span><br><span class="line">204</span><br><span class="line">205</span><br><span class="line">206</span><br><span class="line">207</span><br><span class="line">208</span><br><span class="line">209</span><br><span class="line">210</span><br><span class="line">211</span><br><span class="line">212</span><br><span class="line">213</span><br><span class="line">214</span><br><span class="line">215</span><br><span class="line">216</span><br><span class="line">217</span><br><span class="line">218</span><br><span class="line">219</span><br><span class="line">220</span><br><span class="line">221</span><br><span class="line">222</span><br><span class="line">223</span><br><span class="line">224</span><br><span class="line">225</span><br><span class="line">226</span><br><span class="line">227</span><br><span class="line">228</span><br><span class="line">229</span><br><span class="line">230</span><br><span class="line">231</span><br><span class="line">232</span><br><span class="line">233</span><br><span class="line">234</span><br><span class="line">235</span><br><span class="line">236</span><br><span class="line">237</span><br><span class="line">238</span><br><span class="line">239</span><br><span class="line">240</span><br><span class="line">241</span><br><span class="line">242</span><br><span class="line">243</span><br><span class="line">244</span><br><span class="line">245</span><br><span class="line">246</span><br><span class="line">247</span><br><span class="line">248</span><br><span class="line">249</span><br><span class="line">250</span><br><span class="line">251</span><br><span class="line">252</span><br><span class="line">253</span><br><span class="line">254</span><br><span class="line">255</span><br><span class="line">256</span><br><span class="line">257</span><br><span class="line">258</span><br><span class="line">259</span><br><span class="line">260</span><br><span class="line">261</span><br><span class="line">262</span><br><span class="line">263</span><br><span class="line">264</span><br><span class="line">265</span><br><span class="line">266</span><br><span class="line">267</span><br><span class="line">268</span><br><span class="line">269</span><br><span class="line">270</span><br><span class="line">271</span><br><span class="line">272</span><br><span class="line">273</span><br><span class="line">274</span><br><span class="line">275</span><br><span class="line">276</span><br><span class="line">277</span><br><span class="line">278</span><br><span class="line">279</span><br><span class="line">280</span><br><span class="line">281</span><br><span class="line">282</span><br><span class="line">283</span><br><span class="line">284</span><br><span class="line">285</span><br><span class="line">286</span><br><span class="line">287</span><br><span class="line">288</span><br><span class="line">289</span><br><span class="line">290</span><br><span class="line">291</span><br><span class="line">292</span><br><span class="line">293</span><br><span class="line">294</span><br><span class="line">295</span><br><span class="line">296</span><br><span class="line">297</span><br><span class="line">298</span><br><span class="line">299</span><br><span class="line">300</span><br><span class="line">301</span><br><span class="line">302</span><br><span class="line">303</span><br><span class="line">304</span><br><span class="line">305</span><br><span class="line">306</span><br><span class="line">307</span><br><span class="line">308</span><br><span class="line">309</span><br><span class="line">310</span><br><span class="line">311</span><br><span class="line">312</span><br><span class="line">313</span><br><span class="line">314</span><br><span class="line">315</span><br><span class="line">316</span><br><span class="line">317</span><br><span class="line">318</span><br><span class="line">319</span><br><span class="line">320</span><br><span class="line">321</span><br><span class="line">322</span><br><span class="line">323</span><br><span class="line">324</span><br><span class="line">325</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/bin/sh</span></span><br><span class="line"><span class="comment">#本脚本用于群友交流，完全开源，可以随意传阅，不过希望保留出处。</span></span><br><span class="line"><span class="comment">#Author：Akilar</span></span><br><span class="line"><span class="comment">#Modify:Hajeekn(SL)</span></span><br><span class="line"><span class="comment">#Updated: 2021-08-09</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;==================================================&quot;</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;              欢迎使用Hexo控制脚本!&quot;</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;                更方便的魔改版本&quot;</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">&quot;==================================================&quot;</span></span><br><span class="line">HexoPath=$(<span class="built_in">cd</span> <span class="string">&quot;<span class="subst">$(dirname <span class="string">&quot;<span class="variable">$0</span>&quot;</span>)</span>&quot;</span>; <span class="built_in">pwd</span>)</span><br><span class="line"><span class="built_in">cd</span> <span class="variable">$&#123;HexoPath&#125;</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32m Blog 根目录：&quot;</span><span class="variable">$&#123;HexoPath&#125;</span><span class="string">&quot;\033[0m\n&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32m [0] \033[0m 退出菜单\n&quot;</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[31m =============以下功能需要在空文件夹内使用========\033[0m\n&quot;</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32m [1] \033[0m 初始化安装Hexo（仅在第一次安装时使用）\n&quot;</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32m [2] \033[0m 从云端恢复Hexo\n&quot;</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[31m =============以下功能需要在Hexo文件夹内使用======\033[0m\n&quot;</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32m [3] \033[0m 开启本地预览\n&quot;</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32m [4] \033[0m 重新编译后开启本地预览\033[33m（修改过_config.yml需使用这个才能看到变化）\033[0m\n&quot;</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32m [5] \033[0m 新建博客文章\n&quot;</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32m [6] \033[0m 新建博客页面\n&quot;</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32m [7] \033[0m 部署页面到博客网站\n&quot;</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32m [8] \033[0m 从Github拉取最新版本\n&quot;</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32m [9] \033[0m 提交本地修改到GitHub\n&quot;</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32m [10] \033[0m 升级Hexo及插件\033[31m（慎用）\033[0m\n&quot;</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32m [11] \033[0m 重新安装依赖\n&quot;</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32m [12] \033[0m 安装butterfly主题\n&quot;</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32m [13] \033[0m 安装volantis主题\n&quot;</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32m [14] \033[0m 安装Hexo-Admin \033[33m(用于管理或撰写Hexo博文，适合初学者使用)\033[0m\n&quot;</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[31m =============以下功能为全局指令==================\033[0m\n&quot;</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32m [15] \033[0m 安装ssh密钥\n&quot;</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32m [16] \033[0m 验证ssh密钥\n&quot;</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32m [17] \033[0m 切换npm源为阿里镜像\033[33m (当使用publish命令时会出现错误,适用于不发布包的人)\033[0m\n&quot;</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32m [18] \033[0m 切换npm源为官方源\033[33m (安装慢,但可以使用所有命令)\033[0m\n&quot;</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32m [19] \033[0m 安装 Git\n&quot;</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32m [20] \033[0m 安装 Node.js\n&quot;</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;请选择需要的功能，默认选择\033[32m [3] \033[0m开启本地预览\n&quot;</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;选择：\n&quot;</span></span><br><span class="line"><span class="built_in">read</span> answer</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> [ <span class="string">&quot;<span class="variable">$&#123;answer&#125;</span>&quot;</span> = <span class="string">&quot;1&quot;</span> ]; <span class="keyword">then</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 正在初始化,请坐和放宽...\n&quot;</span></span><br><span class="line"><span class="built_in">mkdir</span> Hexo</span><br><span class="line"><span class="built_in">cd</span> Hexo</span><br><span class="line">npm config <span class="built_in">set</span> registry https://registry.npmmirror.com</span><br><span class="line">npm install -g hexo-cli</span><br><span class="line">hexo init</span><br><span class="line">npm install --save</span><br><span class="line">npm install hexo-deployer-git --save</span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 请查看您当前的Hexo版本...\n&quot;</span></span><br><span class="line">hexo version</span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 安装完成，您可以开始您的Hexo之旅了！\n&quot;</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 请将本脚本文件放入Hexo文件夹以继续使用其他功能！\n&quot;</span></span><br><span class="line"><span class="built_in">sleep</span> 5s</span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m \033[33m请将本脚本文件放入Hexo文件夹以继续使用其他功能！\033[0m\n&quot;</span></span><br><span class="line"><span class="built_in">sleep</span> 5s</span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m \033[31m请将本脚本文件放入Hexo文件夹以继续使用其他功能！\033[0m\n&quot;</span></span><br><span class="line"><span class="built_in">sleep</span> 5s</span><br><span class="line"><span class="built_in">exit</span> 0</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line"><span class="keyword">if</span> [ <span class="string">&quot;<span class="variable">$&#123;answer&#125;</span>&quot;</span> = <span class="string">&quot;2&quot;</span> ]; <span class="keyword">then</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 启动拉取器 ...\n&quot;</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;请输入仓库源码地址: &quot;</span></span><br><span class="line"><span class="built_in">read</span> giturl</span><br><span class="line">git <span class="built_in">clone</span> <span class="variable">$&#123;giturl&#125;</span> Hexo</span><br><span class="line"><span class="built_in">cd</span> Hexo</span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 恢复Hexo中...\n&quot;</span></span><br><span class="line">npm config <span class="built_in">set</span> registry https://registry.npmmirror.com</span><br><span class="line">npm install -g hexo-cli</span><br><span class="line"><span class="comment"># npm install gulp-cli -g #全局安装gulp，未配置不用开启</span></span><br><span class="line">npm install --save</span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 恢复完成，您可以开始您的Hexo之旅了！\n&quot;</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 请将本脚本文件放入Hexo文件夹以继续使用其他功能！\n&quot;</span></span><br><span class="line"><span class="built_in">sleep</span> 5s</span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m \033[33m请将本脚本文件放入Hexo文件夹以继续使用其他功能！\033[0m\n&quot;</span></span><br><span class="line"><span class="built_in">sleep</span> 5s</span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m \033[31m请将本脚本文件放入Hexo文件夹以继续使用其他功能！\033[0m\n&quot;</span></span><br><span class="line"><span class="built_in">sleep</span> 5s</span><br><span class="line"><span class="built_in">exit</span> 0</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line"><span class="keyword">if</span> [ <span class="string">&quot;<span class="variable">$&#123;answer&#125;</span>&quot;</span> = <span class="string">&quot;3&quot;</span> ] || [ <span class="string">&quot;<span class="variable">$&#123;answer&#125;</span>&quot;</span> = <span class="string">&quot;&quot;</span> ]; <span class="keyword">then</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 正在启动本地预览，可以按Ctrl+C退出\n&quot;</span></span><br><span class="line">hexo s</span><br><span class="line"><span class="built_in">exec</span> <span class="variable">$&#123;HexoPath&#125;</span>/menu.sh</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line"><span class="keyword">if</span> [ <span class="string">&quot;<span class="variable">$&#123;answer&#125;</span>&quot;</span> = <span class="string">&quot;4&quot;</span> ]; <span class="keyword">then</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 正在清理本地缓存...\n&quot;</span></span><br><span class="line">hexo clean</span><br><span class="line"><span class="comment"># printf &quot;\033[32mINFO \033[0m 正在更新番剧列表...\n&quot;</span></span><br><span class="line"><span class="comment"># hexo bangumi -u #bilibili追番插件，未配置无需开启</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 正在重新编译静态页面...\n&quot;</span></span><br><span class="line">hexo generate</span><br><span class="line"><span class="comment"># printf &quot;\033[32mINFO \033[0m 正在压缩静态资源...\n&quot;</span></span><br><span class="line"><span class="comment"># gulp #gulp插件，未配置无需开启</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 正在开启本地预览，可以按Ctrl+C退出\n&quot;</span></span><br><span class="line">hexo server</span><br><span class="line"><span class="built_in">exec</span> <span class="variable">$&#123;HexoPath&#125;</span>/menu.sh</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line"><span class="keyword">if</span> [ <span class="string">&quot;<span class="variable">$&#123;answer&#125;</span>&quot;</span> = <span class="string">&quot;5&quot;</span> ] || [ <span class="string">&quot;<span class="variable">$&#123;answer&#125;</span>&quot;</span> = <span class="string">&quot;&quot;</span> ]; <span class="keyword">then</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 请输入您想要新建的文章标题\n&quot;</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m \033[33m标题中的各类标点符号和空格，请用短横\&quot;-\&quot;代替！\033[0m\n&quot;</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;您的文章标题：&quot;</span></span><br><span class="line"><span class="built_in">read</span> posttitle</span><br><span class="line">hexo new post <span class="variable">$&#123;posttitle&#125;</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 新建完成，正在尝试为您打开文章文件\n&quot;</span></span><br><span class="line">start <span class="variable">$&#123;HexoPath&#125;</span>/source/_posts/<span class="variable">$&#123;posttitle&#125;</span>.md</span><br><span class="line"><span class="built_in">exec</span> <span class="variable">$&#123;HexoPath&#125;</span>/menu.sh</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line"><span class="keyword">if</span> [ <span class="string">&quot;<span class="variable">$&#123;answer&#125;</span>&quot;</span> = <span class="string">&quot;6&quot;</span> ] || [ <span class="string">&quot;<span class="variable">$&#123;answer&#125;</span>&quot;</span> = <span class="string">&quot;&quot;</span> ]; <span class="keyword">then</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 请输入您想要新建的页面名称\n&quot;</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m \033[33m名称中的各类标点符号和空格，请用短横\&quot;-\&quot;代替！\033[0m\n&quot;</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;您的页面名称：&quot;</span></span><br><span class="line"><span class="built_in">read</span> pagename</span><br><span class="line">hexo new page <span class="variable">$&#123;pagename&#125;</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 新建完成，正在尝试为您打开页面文件\n&quot;</span></span><br><span class="line">start <span class="variable">$&#123;HexoPath&#125;</span>/source/<span class="variable">$&#123;pagename&#125;</span>/index.md</span><br><span class="line"><span class="built_in">exec</span> <span class="variable">$&#123;HexoPath&#125;</span>/menu.sh</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line"><span class="keyword">if</span> [ <span class="string">&quot;<span class="variable">$&#123;answer&#125;</span>&quot;</span> = <span class="string">&quot;7&quot;</span> ]; <span class="keyword">then</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 正在清理本地缓存...\n&quot;</span></span><br><span class="line">hexo clean</span><br><span class="line"><span class="comment"># printf &quot;\033[32mINFO \033[0m 正在更新番剧列表...\n&quot;</span></span><br><span class="line"><span class="comment"># hexo bangumi -u #bilibili追番插件，未配置无需开启</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 正在重新编译静态页面...\n&quot;</span></span><br><span class="line">hexo generate</span><br><span class="line"><span class="comment"># printf &quot;\033[32mINFO \033[0m 正在压缩静态资源...\n&quot;</span></span><br><span class="line"><span class="comment"># gulp #gulp插件，未配置无需开启</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 正在准备将最新修改部署至Hexo...\n&quot;</span></span><br><span class="line">hexo deploy</span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 部署完成，您的网站已经是最新版本！\n&quot;</span></span><br><span class="line"><span class="built_in">sleep</span> 1s</span><br><span class="line"><span class="built_in">exec</span> <span class="variable">$&#123;HexoPath&#125;</span>/menu.sh</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line"><span class="keyword">if</span> [ <span class="string">&quot;<span class="variable">$&#123;answer&#125;</span>&quot;</span> = <span class="string">&quot;8&quot;</span> ]; <span class="keyword">then</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 正在启动拉取器...\n&quot;</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;请输入分支名: &quot;</span></span><br><span class="line"><span class="built_in">read</span> branch</span><br><span class="line">git pull origin <span class="variable">$branch</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 拉取完毕，您的博客已是最新版本！\n&quot;</span></span><br><span class="line"><span class="built_in">sleep</span> 1s</span><br><span class="line"><span class="built_in">exec</span> <span class="variable">$&#123;HexoPath&#125;</span>/menu.sh</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line"><span class="keyword">if</span> [ <span class="string">&quot;<span class="variable">$&#123;answer&#125;</span>&quot;</span> = <span class="string">&quot;9&quot;</span> ]; <span class="keyword">then</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 正在提交最新修改到GitHub...\n&quot;</span></span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">&quot;Update posts content&quot;</span></span><br><span class="line">git push origin <span class="variable">$branch</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 提交完毕，您的修改已上传至Github！\n&quot;</span></span><br><span class="line"><span class="built_in">sleep</span> 1s</span><br><span class="line"><span class="built_in">exec</span> <span class="variable">$&#123;HexoPath&#125;</span>/menu.sh</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line"><span class="keyword">if</span> [ <span class="string">&quot;<span class="variable">$&#123;answer&#125;</span>&quot;</span> = <span class="string">&quot;10&quot;</span> ]; <span class="keyword">then</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 请先确认当前版本 ...\n&quot;</span></span><br><span class="line">hexo version</span><br><span class="line"><span class="built_in">sleep</span> 3s</span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 即将为您全局升级hexo-cli...\n&quot;</span></span><br><span class="line">npm install hexo-cli -g</span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m hexo-cli升级完成，请查看当前版本。\n&quot;</span></span><br><span class="line">hexo version</span><br><span class="line"><span class="built_in">sleep</span> 3s</span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 即将为您升级npm-check...\n&quot;</span></span><br><span class="line">npm install -g npm-check</span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m npm-check升级完成！\n&quot;</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 正在使用npm-check检查系统是否有可升级插件...\n&quot;</span></span><br><span class="line">npm-check</span><br><span class="line"><span class="built_in">sleep</span> 3s</span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 即将为您升级npm-upgrade...\n&quot;</span></span><br><span class="line">npm install -g npm-upgrade</span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 正在使用npm-upgrade升级插件...\n&quot;</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 您可以在接下来的过程中主动选择是否升级插件\n&quot;</span></span><br><span class="line">npm-upgrade</span><br><span class="line"><span class="built_in">sleep</span> 1s</span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 正在为您保存升级结果...\n&quot;</span></span><br><span class="line">npm update -g</span><br><span class="line">npm update --save</span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 恭喜您，您的Hexo已经是最新版本\n&quot;</span></span><br><span class="line"><span class="built_in">sleep</span> 2s</span><br><span class="line"><span class="built_in">exec</span> <span class="variable">$&#123;HexoPath&#125;</span>/menu.sh</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line"><span class="keyword">if</span> [ <span class="string">&quot;<span class="variable">$&#123;answer&#125;</span>&quot;</span> = <span class="string">&quot;11&quot;</span> ]; <span class="keyword">then</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 正在清空当前依赖环境 ...\n&quot;</span></span><br><span class="line"><span class="built_in">rm</span> node_modules</span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 正在清空当前依赖关系锁定 ...\n&quot;</span></span><br><span class="line"><span class="built_in">rm</span> package-lock.json</span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 正在清空当前依赖关系缓存 ...\n&quot;</span></span><br><span class="line">npm cache clean --force</span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 正在将npm源替换为阿里云镜像 ...\n&quot;</span></span><br><span class="line">npm config <span class="built_in">set</span> registry https://registry.npmmirror.com</span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 正在重新安装当前依赖环境 ...\n&quot;</span></span><br><span class="line">npm install</span><br><span class="line"><span class="built_in">sleep</span> 2s</span><br><span class="line"><span class="built_in">exec</span> <span class="variable">$&#123;HexoPath&#125;</span>/menu.sh</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line"><span class="keyword">if</span> [ <span class="string">&quot;<span class="variable">$&#123;answer&#125;</span>&quot;</span> = <span class="string">&quot;12&quot;</span> ]; <span class="keyword">then</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 正在为您下载最新稳定版butterfly主题 ...\n&quot;</span></span><br><span class="line">git <span class="built_in">clone</span> -b master https://gitee.com/iamjerryw/hexo-theme-butterfly.git themes/butterfly</span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 正在为您安装必要依赖！\n&quot;</span></span><br><span class="line">npm install hexo-renderer-pug hexo-renderer-stylus --save</span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 安装完成，感谢您对butterfly的支持！\n&quot;</span></span><br><span class="line"><span class="built_in">sleep</span> 1s</span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 请在/Hexo/_config.yml中将theme修改为butterfly以激活主题！\n&quot;</span></span><br><span class="line"><span class="built_in">sleep</span> 3s</span><br><span class="line"><span class="built_in">exec</span> <span class="variable">$&#123;HexoPath&#125;</span>/menu.sh</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line"><span class="keyword">if</span> [ <span class="string">&quot;<span class="variable">$&#123;answer&#125;</span>&quot;</span> = <span class="string">&quot;13&quot;</span> ]; <span class="keyword">then</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 正在为您下载最新稳定版volantis主题 ...\n&quot;</span></span><br><span class="line">git <span class="built_in">clone</span> https://github.com/volantis-x/hexo-theme-volantis themes/volantis</span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 正在安装本地搜索必要依赖！\n&quot;</span></span><br><span class="line">npm install hexo-generator-search --save</span><br><span class="line">npm install hexo-generator-json-content --save</span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 正在安装页面渲染必要依赖！\n&quot;</span></span><br><span class="line">npm install hexo-renderer-stylus --save</span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 安装完成，感谢您对volantis的支持！\n&quot;</span></span><br><span class="line"><span class="built_in">sleep</span> 1s</span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 请在/Hexo/_config.yml中将theme修改为volantis以激活主题！\n&quot;</span></span><br><span class="line"><span class="built_in">sleep</span> 3s</span><br><span class="line"><span class="built_in">exec</span> <span class="variable">$&#123;HexoPath&#125;</span>/menu.sh</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line"><span class="keyword">if</span> [ <span class="string">&quot;<span class="variable">$&#123;answer&#125;</span>&quot;</span> = <span class="string">&quot;14&quot;</span> ]; <span class="keyword">then</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 正在为您下载Hexo-Admin插件 ...\n&quot;</span></span><br><span class="line">npm install hexo-admin --save</span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 安装完成，即将为您启动本地预览！\n&quot;</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 请访问 http://localhost:4000/admin/ 进行博文编辑！\n&quot;</span></span><br><span class="line"><span class="built_in">sleep</span> 2s</span><br><span class="line">hexo server</span><br><span class="line"><span class="built_in">sleep</span> 1s</span><br><span class="line"><span class="built_in">exec</span> <span class="variable">$&#123;HexoPath&#125;</span>/menu.sh</span><br><span class="line"></span><br><span class="line"><span class="keyword">else</span></span><br><span class="line"><span class="keyword">if</span> [ <span class="string">&quot;<span class="variable">$&#123;answer&#125;</span>&quot;</span> = <span class="string">&quot;15&quot;</span> ]; <span class="keyword">then</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 正在启动Git工具...\n&quot;</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;请输入 GitHub 用户名: &quot;</span></span><br><span class="line"><span class="built_in">read</span> githubuser</span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;请输入 GitHub 邮箱: &quot;</span></span><br><span class="line"><span class="built_in">read</span> githubemail</span><br><span class="line">git config --global user.name <span class="string">&quot;<span class="variable">$githubuser</span>&quot;</span></span><br><span class="line">git config --global user.email <span class="string">&quot;<span class="variable">$githubemail</span>&quot;</span></span><br><span class="line">ssh-keygen -t rsa -C <span class="variable">$githubemail</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 即将打开sshkey，复制后可按 Ctrl+D 返回...\n&quot;</span></span><br><span class="line"><span class="built_in">sleep</span> 2s</span><br><span class="line">less ~/.ssh/id_rsa.pub</span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 配置完成，请将sshkey添加到Github！\n&quot;</span></span><br><span class="line"><span class="built_in">sleep</span> 1s</span><br><span class="line"><span class="built_in">exec</span> <span class="variable">$&#123;HexoPath&#125;</span>/menu.sh</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line"><span class="keyword">if</span> [ <span class="string">&quot;<span class="variable">$&#123;answer&#125;</span>&quot;</span> = <span class="string">&quot;16&quot;</span> ]; <span class="keyword">then</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 正在验证SSHkey是否配置成功 ...\n&quot;</span></span><br><span class="line">ssh -T git@github.com</span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 验证完毕，您的SSHkey已成功绑定至Github！\n&quot;</span></span><br><span class="line"><span class="built_in">sleep</span> 1s</span><br><span class="line"><span class="built_in">exec</span> <span class="variable">$&#123;HexoPath&#125;</span>/menu.sh</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line"><span class="keyword">if</span> [ <span class="string">&quot;<span class="variable">$&#123;answer&#125;</span>&quot;</span> = <span class="string">&quot;17&quot;</span> ]; <span class="keyword">then</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 正在查询当前npm源 ...\n&quot;</span></span><br><span class="line">npm config get registry</span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 正在将npm源替换为阿里云镜像 ...\n&quot;</span></span><br><span class="line">npm config <span class="built_in">set</span> registry https://registry.npmmirror.com</span><br><span class="line"><span class="built_in">sleep</span> 2s</span><br><span class="line"><span class="built_in">exec</span> <span class="variable">$&#123;HexoPath&#125;</span>/menu.sh</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line"><span class="keyword">if</span> [ <span class="string">&quot;<span class="variable">$&#123;answer&#125;</span>&quot;</span> = <span class="string">&quot;18&quot;</span> ]; <span class="keyword">then</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 正在查询当前npm源 ...\n&quot;</span></span><br><span class="line">npm config get registry</span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 正在将npm源替换为官方源 ...\n&quot;</span></span><br><span class="line">npm config <span class="built_in">set</span> registry https://registry.npmjs.org</span><br><span class="line"><span class="built_in">sleep</span> 2s</span><br><span class="line"><span class="built_in">exec</span> <span class="variable">$&#123;HexoPath&#125;</span>/menu.sh</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line"><span class="keyword">if</span> [ <span class="string">&quot;<span class="variable">$&#123;answer&#125;</span>&quot;</span> = <span class="string">&quot;19&quot;</span> ]; <span class="keyword">then</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 安装 Git 暂不支持linux、macos,如果你是linux或macos用户,请使用系统自带的包管理器安装 ...\n&quot;</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 启动下载器 ...\n&quot;</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;安装默认使用32包,如果要安装64请更改sh源码或手动将32替换为64 ...\n&quot;</span></span><br><span class="line"><span class="built_in">mkdir</span> temp</span><br><span class="line"><span class="built_in">cd</span> temp</span><br><span class="line">certutil -urlcache -<span class="built_in">split</span> -f https://npmmirror.com/mirrors/git-for-windows/v2.32.0.windows.2/Git-2.32.0.2-32-bit.exe</span><br><span class="line">./Git-2.32.0.2-32-bit.exe</span><br><span class="line"><span class="built_in">rm</span> -r temp</span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;安装完成&quot;</span></span><br><span class="line"><span class="built_in">sleep</span> 2s</span><br><span class="line"><span class="built_in">exec</span> <span class="variable">$&#123;HexoPath&#125;</span>/menu.sh</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line"><span class="keyword">if</span> [ <span class="string">&quot;<span class="variable">$&#123;answer&#125;</span>&quot;</span> = <span class="string">&quot;20&quot;</span> ]; <span class="keyword">then</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 安装 Node.js 暂不支持linux、macos,如果你是linux或macos用户,请使用系统自带的包管理器安装 ...\n&quot;</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 启动下载器 ...\n&quot;</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;安装默认使用32包,如果要安装64请更改sh源码或手动将32替换为64 ...\n&quot;</span></span><br><span class="line"><span class="built_in">mkdir</span> temp</span><br><span class="line"><span class="built_in">cd</span> temp</span><br><span class="line">certutil -urlcache -<span class="built_in">split</span> -f https://npmmirror.com/mirrors/node/latest-v12.x/node-v12.22.3-x86.msi</span><br><span class="line">./node-v12.22.3-x86.msi</span><br><span class="line"><span class="built_in">cd</span> ../</span><br><span class="line"><span class="built_in">rm</span> -r temp</span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;安装完成&quot;</span></span><br><span class="line"><span class="built_in">sleep</span> 2s</span><br><span class="line"><span class="built_in">exec</span> <span class="variable">$&#123;HexoPath&#125;</span>/menu.sh</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line"><span class="keyword">if</span> [ <span class="string">&quot;<span class="variable">$&#123;answer&#125;</span>&quot;</span> = <span class="string">&quot;0&quot;</span> ]; <span class="keyword">then</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[32mINFO \033[0m 欢迎下次光临！\n&quot;</span></span><br><span class="line"><span class="built_in">sleep</span> 1s</span><br><span class="line"><span class="built_in">exit</span> 0</span><br><span class="line"><span class="keyword">else</span></span><br><span class="line"><span class="built_in">printf</span> <span class="string">&quot;\033[31mERROR \033[0m 输入错误，请返回重新选择...\n&quot;</span></span><br><span class="line"><span class="built_in">sleep</span> 1s</span><br><span class="line"><span class="built_in">exec</span> <span class="variable">$&#123;HexoPath&#125;</span>/menu.sh</span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"><span class="keyword">fi</span></span><br><span class="line"><span class="keyword">fi</span></span><br></pre></td></tr></table></figure>
 <p>复制后记得按照注释信息修改个人账户和邮箱。</p>
 <p>界面效果如下：</p>
 <p><img
-src="http://img.xaopng.top/i/2024/02/27/65dd804290353.png" srcset="/img/loading.gif" lazyload /></p></li>
+src="http://img.xaopng.top/i/2024/02/27/65dd804290353.png" /></p></li>
 </ul>
-
-                
-              </div>
-            
-            <hr/>
-            <div>
-              <div class="post-metas my-3">
-  
-  
-</div>
-
-
-              
-  
-
-  <div class="license-box my-3">
-    <div class="license-title">
-      <div>Win10:Hexo+github搭建个人博客</div>
-      <div>http://example.com/posts/9ff9fc00.html</div>
-    </div>
-    <div class="license-meta">
-      
-        <div class="license-meta-item">
-          <div>Author</div>
-          <div>Plaing</div>
-        </div>
-      
-      
-        <div class="license-meta-item license-meta-date">
-          <div>Posted on</div>
-          <div>February 27, 2024</div>
-        </div>
-      
-      
-      
-        <div class="license-meta-item">
-          <div>Licensed under</div>
-          <div>
-            
-              
-              
-                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
-                  <span class="hint--top hint--rounded" aria-label="BY - Attribution">
-                    <i class="iconfont icon-by"></i>
-                  </span>
-                </a>
-              
-            
-          </div>
-        </div>
-      
-    </div>
-    <div class="license-icon iconfont"></div>
-  </div>
-
-
-
-              
-                <div class="post-prevnext my-3">
-                  <article class="post-prev col-6">
-                    
-                    
-                      <a href="/posts/2bcb1cd7.html" title="Hexo文章写作格式">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">Hexo文章写作格式</span>
-                        <span class="visible-mobile">Previous</span>
-                      </a>
-                    
-                  </article>
-                  <article class="post-next col-6">
-                    
-                    
-                      <a href="/posts/e18ede91.html" title="Hexo配置">
-                        <span class="hidden-mobile">Hexo配置</span>
-                        <span class="visible-mobile">Next</span>
-                        <i class="iconfont icon-arrowright"></i>
-                      </a>
-                    
-                  </article>
-                </div>
-              
-            </div>
-
-            
-          </article>
-        </div>
-      </div>
-    </div>
-
-    <div class="side-col d-none d-lg-block col-lg-2">
-      
-  <aside class="sidebar" style="margin-left: -1rem">
-    <div id="toc">
-  <p class="toc-header">
-    <i class="iconfont icon-list"></i>
-    <span>Table of Contents</span>
-  </p>
-  <div class="toc-body" id="toc-body"></div>
-</div>
-
-
-
-  </aside>
-
-
-    </div>
-  </div>
-</div>
-
-
-
-
-
-  
-
-
-
-  
-
-
-
-  
-
-
-
-  
-
-
-
-  
-
-
-
-
-
-
-
-    
-
-    
-      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
-        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
-      </a>
-    
-
-    
-      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
-     aria-hidden="true">
-  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header text-center">
-        <h4 class="modal-title w-100 font-weight-bold">Search</h4>
-        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body mx-3">
-        <div class="md-form mb-5">
-          <input type="text" id="local-search-input" class="form-control validate">
-          <label data-error="x" data-success="v" for="local-search-input">Keyword</label>
-        </div>
-        <div class="list-group" id="local-search-result"></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-    
-
-    
-  </main>
-
-  <footer>
-    <div class="footer-inner">
-  
-    <div class="footer-content">
-       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> 
-    </div>
-  
-  
-  
-  
-</div>
-
-  </footer>
-
-  <!-- Scripts -->
-  
-  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
-  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
-
-  <script>
-    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
-    NProgress.start()
-    window.addEventListener('load', function() {
-      NProgress.done();
-    })
-  </script>
-
-
-<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
-<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
-<script  src="/js/events.js" ></script>
-<script  src="/js/plugins.js" ></script>
-
-
-  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
-  <script>
-    (function (window, document) {
-      var typing = Fluid.plugins.typing;
-      var subtitle = document.getElementById('subtitle');
-      if (!subtitle || !typing) {
-        return;
-      }
-      var text = subtitle.getAttribute('data-typed-text');
-      
-        typing(text);
-      
-    })(window, document);
-  </script>
-
-
-
-
-  
-    <script  src="/js/img-lazyload.js" ></script>
-  
-
-
-
-
-  
-<script>
-  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
-    var toc = jQuery('#toc');
-    if (toc.length === 0 || !window.tocbot) { return; }
-    var boardCtn = jQuery('#board-ctn');
-    var boardTop = boardCtn.offset().top;
-
-    window.tocbot.init(Object.assign({
-      tocSelector     : '#toc-body',
-      contentSelector : '.markdown-body',
-      linkClass       : 'tocbot-link',
-      activeLinkClass : 'tocbot-active-link',
-      listClass       : 'tocbot-list',
-      isCollapsedClass: 'tocbot-is-collapsed',
-      collapsibleClass: 'tocbot-is-collapsible',
-      scrollSmooth    : true,
-      includeTitleTags: true,
-      headingsOffset  : -boardTop,
-    }, CONFIG.toc));
-    if (toc.find('.toc-list-item').length > 0) {
-      toc.css('visibility', 'visible');
-    }
-
-    Fluid.events.registerRefreshCallback(function() {
-      if ('tocbot' in window) {
-        tocbot.refresh();
-        var toc = jQuery('#toc');
-        if (toc.length === 0 || !tocbot) {
-          return;
-        }
-        if (toc.find('.toc-list-item').length > 0) {
-          toc.css('visibility', 'visible');
-        }
-      }
-    });
-  });
-</script>
-
-
-  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
-
-  <script>Fluid.plugins.codeWidget();</script>
-
-
-  
-<script>
-  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
-    window.anchors.options = {
-      placement: CONFIG.anchorjs.placement,
-      visible  : CONFIG.anchorjs.visible
-    };
-    if (CONFIG.anchorjs.icon) {
-      window.anchors.options.icon = CONFIG.anchorjs.icon;
-    }
-    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
-    var res = [];
-    for (var item of el) {
-      res.push('.markdown-body > ' + item.trim());
-    }
-    if (CONFIG.anchorjs.placement === 'left') {
-      window.anchors.options.class = 'anchorjs-link-left';
-    }
-    window.anchors.add(res.join(', '));
-
-    Fluid.events.registerRefreshCallback(function() {
-      if ('anchors' in window) {
-        anchors.removeAll();
-        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
-        var res = [];
-        for (var item of el) {
-          res.push('.markdown-body > ' + item.trim());
-        }
-        if (CONFIG.anchorjs.placement === 'left') {
-          anchors.options.class = 'anchorjs-link-left';
-        }
-        anchors.add(res.join(', '));
-      }
-    });
-  });
-</script>
-
-
-  
-<script>
-  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
-    Fluid.plugins.fancyBox();
-  });
-</script>
-
-
-  <script>Fluid.plugins.imageCaption();</script>
-
-  <script  src="/js/local-search.js" ></script>
-
-
-
-
-
-<!-- 主题的启动项，将它保持在最底部 -->
-<!-- the boot of the theme, keep it at the bottom -->
-<script  src="/js/boot.js" ></script>
-
-
-  
-
-  <noscript>
-    <div class="noscript-warning">Blog works best with JavaScript enabled</div>
-  </noscript>
-</body>
-</html>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>Author: </span><span class="post-copyright-info"><a href="http://example.com">Plaing</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>Link: </span><span class="post-copyright-info"><a href="http://example.com/posts/9ff9fc00.html">http://example.com/posts/9ff9fc00.html</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/hexo/">hexo</a></div><div class="post_share"><div class="social-share" data-image="http://img.xaopng.top/i/2023/11/05/6547aa77dc456.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-full"><a href="/posts/e18ede91.html" title="Hexo配置"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">Previous</div><div class="prev_info">Hexo配置</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>Related Articles</span></div><div class="relatedPosts-list"><div><a href="/posts/e18ede91.html" title="Hexo配置"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-02-27</div><div class="title">Hexo配置</div></div></a></div><div><a href="/posts/2bcb1cd7.html" title="Hexo文章写作格式"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-02-28</div><div class="title">Hexo文章写作格式</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="http://img.xaopng.top/i/2023/11/05/6547aa77dc456.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">Plaing</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">1</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xaopng"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Contents</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C"><span class="toc-number">1.</span> <span class="toc-text">准备工作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85hexo"><span class="toc-number">2.</span> <span class="toc-text">安装Hexo</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%83%A8%E7%BD%B2%E5%88%B0github"><span class="toc-number">3.</span> <span class="toc-text">部署到Github</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%9F%E5%90%8D%E9%85%8D%E7%BD%AE"><span class="toc-number">4.</span> <span class="toc-text">域名配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6"><span class="toc-number">5.</span> <span class="toc-text">版本控制</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%BA%90%E7%A0%81%E5%AD%98%E6%94%BE%E6%96%B9%E6%A1%88%E5%BC%80%E6%BA%90or%E9%97%AD%E6%BA%90"><span class="toc-number">5.1.</span> <span class="toc-text">源码存放方案：开源or闭源</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%8D%9A%E5%AE%A2%E7%AE%A1%E7%90%86%E6%B5%81%E7%A8%8B"><span class="toc-number">5.2.</span> <span class="toc-text">博客管理流程</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%AC%E5%9C%B0%E8%B5%84%E6%96%99%E4%B8%A2%E5%A4%B1%E6%88%96%E5%A4%9Apc%E5%90%8C%E6%AD%A5"><span class="toc-number">5.3.</span> <span class="toc-text">本地资料丢失或多PC同步</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8C%87%E4%BB%A4%E8%84%9A%E6%9C%AC"><span class="toc-number">5.4.</span> <span class="toc-text">指令脚本</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/2bcb1cd7.html" title="Hexo文章写作格式">Hexo文章写作格式</a><time datetime="2024-02-28T03:12:07.000Z" title="Created 2024-02-28 11:12:07">2024-02-28</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/e18ede91.html" title="Hexo配置">Hexo配置</a><time datetime="2024-02-27T12:39:48.000Z" title="Created 2024-02-27 20:39:48">2024-02-27</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/posts/9ff9fc00.html" title="Win10:Hexo+github搭建个人博客">Win10:Hexo+github搭建个人博客</a><time datetime="2024-02-27T12:39:48.000Z" title="Created 2024-02-27 20:39:48">2024-02-27</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2024 By Plaing</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Toggle Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between Single-column and Double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.13.0"></script><script src="/js/main.js?v=4.13.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.33/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
